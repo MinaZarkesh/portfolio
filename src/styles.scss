@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --dark-blue-BG: #141D2F;
+    --dark-blue-80: rgba(20, 29, 47, 0.8);
+    --green: #70E61C;
+    --ligth-blue: #1CDAE6;
+    --purple: #9747FF;
+    --text-color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Poppins';
+    background-color: var(--dark-blue-BG);
+    color: var(--text-color);
+    overflow: hidden;
+    // overflow-y: auto;
+}
