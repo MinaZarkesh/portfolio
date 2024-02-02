@@ -1,0 +1,23 @@
+.info{
+    display: flex;
+    gap: 24px;
+    svg{
+        fill: aqua;
+    }
+}
+
+.about-me{
+    padding: 24px;
+    margin-right: 24px;
+}
+
+.photo{
+    width: 90%;
+    background: url("../../../assets/img/hero-character-photo.png");
+    background-position: center;
+    background-size: cover;
+    scale: 1.2;
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 1) 50%);
+    border: 4px solid yellow;
+    border-radius: 50%;
+}
