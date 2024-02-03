@@ -1,23 +1,37 @@
-.info{
-    display: flex;
-    gap: 24px;
-    svg{
-        fill: aqua;
-    }
+.info {
+  display: flex;
+  gap: 24px;
+  svg {
+    fill: aqua;
+  }
 }
 
-.about-me{
-    padding: 24px;
-    margin-right: 24px;
+.about-me {
+  width: fit-content;
+  padding: 24px;
+  margin-right: 24px;
 }
 
-.photo{
-    width: 90%;
-    background: url("../../../assets/img/hero-character-photo.png");
-    background-position: center;
-    background-size: cover;
-    scale: 1.2;
-  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 1) 50%);
+.frame {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 120%;
+}
+.line2{
+    flex: 3 1 0;
+    height: 0px;
     border: 4px solid yellow;
-    border-radius: 50%;
+}
+
+.photo {
+  display: flex;
+  width: 353px;
+  height: 353px;
+  background: url("../../../assets/img/hero-character-photo.png");
+  background-position: center;
+  background-size: cover;
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 1) 50%);
+  border: 4px solid yellow;
+  border-radius: 50%;
 }
