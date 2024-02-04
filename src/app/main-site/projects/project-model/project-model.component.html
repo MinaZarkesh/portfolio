@@ -1,4 +1,4 @@
-<div class="frame">
+<div [ngClass]="index > -1 && index%2 == 0 ? 'frame frame-right' : 'frame frame-left'">
   <img src="{{project.img}}" alt="" srcset="" />
   <div class="info">
     <span class="info-title">{{project.title}}</span>

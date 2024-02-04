@@ -11,6 +11,14 @@
     }
 }
 
+.frame-left{
+    flex-direction: row-reverse;
+}
+
+.frame-right{
+    flex-direction: row;
+}
+
 .info{
     display: flex;
     flex-direction: column;
