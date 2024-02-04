@@ -1,1 +1,13 @@
-<p>projects works!</p>
+<div class="headline">
+    <div class="text-right">
+        <div class="mySkills">
+          <span>Portfolio</span>
+          <div class="line3"></div>
+        </div>
+        <span class="mySkills-text">
+          This page is a sample of my work - please feel free to try them out.
+        </span>
+      </div>      
+</div>
+
+<app-project-model *ngFor="let project of projects" [project]="project"></app-project-model>

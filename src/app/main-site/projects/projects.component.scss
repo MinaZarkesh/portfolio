@@ -1,0 +1,48 @@
+.text-right {
+    display: flex;
+    width: 66%;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: end;
+    .mySkills {
+      display: flex;
+      height: fit-content;
+      gap: 1.5rem;
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      span {
+        height: fit-content;
+        white-space: nowrap;
+        font-size: 4rem;
+        line-height: 100%;
+      }
+      .line3 {
+        flex: 1; 
+        height: 4px;
+        border-bottom: 4px solid var(--purple);
+      }
+    }
+  
+    .mySkills-text {
+      margin-top: 24px;
+      width: 66%;
+    }
+  
+    button {
+     width: fit-content;
+      background-color: var(--green);
+      padding: 15px 30px;
+      gap: 10px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+    }
+  }
+  
+.headline{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+    align-items: end;
+}

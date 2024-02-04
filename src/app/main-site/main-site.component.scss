@@ -7,9 +7,19 @@ app-about{
 }
 
 app-skills{
+    position: relative;
     display: flex;
     width: 100vw;
     height: fit-content;
+    max-width: 100%;
+    gap: 5%;
+    margin: 5% 0%;
+}
+
+app-projects{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
     max-width: 100%;
     gap: 5%;
     margin: 5% 0%;
