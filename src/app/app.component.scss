@@ -11,3 +11,8 @@ app-main-site{
     flex-direction: column;
 }
 
+app-footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}

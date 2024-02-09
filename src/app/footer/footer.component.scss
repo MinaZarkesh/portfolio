@@ -1,0 +1,25 @@
+.container {
+    height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid var(--green);
+  width: 100%;
+  width: calc(100vw - 236px);
+  max-width: 100%;
+  padding: 0 100px;
+  .frame {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    width: 100%;
+    span {
+      font-size: 1.5rem;
+    }
+    .icons {
+      display: flex;
+      gap: 2.6rem;
+    }
+  }
+}
