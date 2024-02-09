@@ -1,9 +1,10 @@
 <div class="header">
     <img src="assets/img/Logo.png" alt="">
-    <div class="links-header">
-        <a href="about">About me</a>
-        <a href="skills">Skills</a>
-        <a href="Projects">Projects</a>
-        <a href="Hackathons">Hackathons</a>
+    <div class="links-header" *ngIf="view == 'desktop' " >
+     <a *ngFor="let navLink of navLinks; let i = index" href="{{navLink.href}}" [class.active]="i == selectedIndex" (click)="selectedIndex = i">{{navLink.text}} </a>
     </div>
+    <div class="hamburger-menu" *ngIf="view == 'mobile'" >
+        Menu
+    </div>
+
 </div>

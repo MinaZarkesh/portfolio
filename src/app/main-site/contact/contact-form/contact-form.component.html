@@ -9,11 +9,7 @@
       placeholder="Your name"
       required
     />
-    @if (!name.valid && name.touched) {
-    <span class="hint">Name is required</span>
-    }
-
-    <input
+       <input
       #email="ngModel"
       [(ngModel)]="contactData.email"
       type="email"

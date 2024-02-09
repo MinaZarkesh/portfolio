@@ -11,13 +11,28 @@ textarea {
   margin-bottom: 0.5rem;
   resize: vertical;
 
-  &:focus-visible {
-    outline-color: red;
+  &::placeholder {
+    color: white;
   }
 
-  &::placeholder {
-    color: var(--white);
-    opacity: 1; /* Firefox */
+  &:focus-visible {
+    box-shadow: none;
+    outline: var(--purple);
+
+    &:invalid {
+      border-color: red !important;
+    }
+
+    &:required:valid {
+      border-color: var(--green);
+    }
+  }
+
+  &:required:valid {
+    border-color: var(--green);
+    &:invalid {
+      border-color: red !important;
+    }
   }
 
   &:-ms-input-placeholder {
@@ -31,7 +46,6 @@ input[type="checkbox"] {
   height: 1rem;
   appearance: none;
   -webkit-appearance: none;
-  // margin-right: 0.25rem;
   content: url("../../../../assets/img/checkbox-unchecked.svg");
   cursor: pointer;
 
@@ -64,7 +78,6 @@ input[type="submit"] {
     gap: 1rem;
     .hint {
       color: red;
-    //   font-size: 0.75rem;
     }
   }
 }
@@ -81,10 +94,8 @@ input[type="submit"] {
     align-items: start;
 
     span {
-        //   color: var(--white);
-          font-size: 0.75rem;
-        //   margin-bottom: 1rem;
-        }
+      font-size: 0.75rem;
+    }
 
     .privacy-check {
       display: flex;
@@ -110,4 +121,3 @@ input[type="submit"] {
 //       height: 40px;
 //     }
 //   }
-  
