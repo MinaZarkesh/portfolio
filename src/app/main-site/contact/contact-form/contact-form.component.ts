@@ -1,14 +1,15 @@
 import { Component, NgModule } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-// import {MatIconModule} from '@angular/material/icon';
-// import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+ import {MatIconModule} from '@angular/material/icon';
+ import {MatInputModule} from '@angular/material/input';
 // import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  // imports: [MatIconModule, MatInputModule, MatFormFieldModule],
-  imports: [FormsModule],
+   imports: [MatIconModule, MatInputModule, FormsModule, MatFormFieldModule],
+  // imports: [FormsModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })

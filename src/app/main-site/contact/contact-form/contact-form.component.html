@@ -1,54 +1,89 @@
 <div class="container">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      
-        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
-        @if (!name.valid && name.touched) {
-          <span class="hint">Name is required</span>
-        }
-   
-        <input  #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <input
+      #name="ngModel"
+      [(ngModel)]="contactData.name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    @if (!name.valid && name.touched) {
+    <span class="hint">Name is required</span>
+    }
 
-        @if (!email.valid && email.touched) {
-          <span class="hint">Email is required</span>
-        }
+    <input
+      #email="ngModel"
+      [(ngModel)]="contactData.email"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Your email"
+      required
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+    />
 
-    
-        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" style="height: 200px;" required></textarea>
-        @if (!message.valid && message.touched) {
-          <span class="hint">Message is required</span>
-        }
-        <div class="privacy">
-          <div class="privacy-check-frame">
-            <div class="privacy-check">
-              <input #privacy="ngModel" [(ngModel)]="checkboxState" type="checkbox" name="privacy" id="privacy" required>
-              <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined</span>
-            </div>
-            @if (!checkboxState) {
-              <span class="privacy-text hint" >Please accept the privacy policy.</span>
-            } @else{
-              <span class="privacy-text" >Privacy policy accepted.</span>
-            }
-            
-  
-          </div>
-          <input type="submit" value="Send Message :)">
+    @if (!email.valid && email.touched) {
+    <span class="hint">Email is required</span>
+    }
+
+    <textarea
+      #message="ngModel"
+      minlength="4"
+      [(ngModel)]="contactData.message"
+      id="message"
+      name="message"
+      placeholder="Your message"
+      style="height: 200px"
+      required
+    ></textarea>
+    @if (!message.valid && message.touched) {
+    <span class="hint">Message is required</span>
+    }
+    <div class="privacy">
+      <div class="privacy-check-frame">
+        <div class="privacy-check">
+          <input
+            #privacy="ngModel"
+            [(ngModel)]="checkboxState"
+            type="checkbox"
+            name="privacy"
+            id="privacy"
+            required
+          />
+          <span
+            >I've read the <a href="#">privacy policy</a> and agree to the
+            processing of my data as outlined</span
+          >
         </div>
-    </form>
+        @if (!checkboxState) {
+        <span class="privacy-text hint">Please accept the privacy policy.</span>
+        } @else{
+        <span class="privacy-text">Privacy policy accepted.</span>
+        }
+      </div>
+      <input type="submit" value="Send Message :)" />
+    </div>
+  </form>
 </div>
 
-<!-- <p>
-    <mat-form-field appearance="fill">
+<!-- <p class="mat-form"> -->
+    <!-- <mat-form-field appearance="fill">
       <mat-label>Fill form field</mat-label>
       <input matInput placeholder="Placeholder">
       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
       <mat-hint>Hint</mat-hint>
-    </mat-form-field>
-  </p> -->
-  <!-- <p>
-    <mat-form-field appearance="outline" ngSkipHydration>
+    </mat-form-field> -->
+  <!-- </p> -->
+
+
+  <!-- <div class="mat-form"> -->
+    <!-- <mat-form-field appearance="outline" >
       <mat-label>Outline form field</mat-label>
       <input matInput placeholder="Placeholder">
       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
       <mat-hint>Hint</mat-hint>
-    </mat-form-field>
-  </p> -->
+    </mat-form-field> -->
+
+  <!-- </div> -->
