@@ -1,16 +1,15 @@
-
 .header {
   display: flex;
   justify-content: space-between;
   padding: 37px 100px;
-  height: 100px;
+  height: 64px;
   width: 100vw;
   max-width: 100%;
   align-items: center;
   background-color: var(--dark-blue-BG);
   position: relative;
 
-  .logo-text-frame{
+  .logo-text-frame {
     height: 100px;
     width: fit-content;
     // border: 1px solid white;
@@ -20,14 +19,16 @@
     left: 10px;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(10deg, 
-    var(--ligth-blue) 10%,
-     var(--purple) 50%, 
-    var(--ligth-blue) 90%);
+    background-image: linear-gradient(
+      10deg,
+      var(--ligth-blue) 10%,
+      var(--purple) 50%,
+      var(--ligth-blue) 90%
+    );
 
-    // background-image: linear-gradient(170deg, 
+    // background-image: linear-gradient(170deg,
     // var(--ligth-blue) -10%,
-    //  var(--purple) 50%, 
+    //  var(--purple) 50%,
     // var(--ligth-blue) 110%);
 
     background-clip: text;
@@ -66,32 +67,27 @@
   right: 0;
   margin: 0;
   height: 100%;
-  // width: 100px;
   position: relative;
-  // width: fit-content;
 }
+
 .hamburger-menu-frame *,
 *::after,
 *::before {
   box-sizing: border-box;
-  // background-color: white;
-  color: black;
+  // color: var(--text-color);
 }
 
 .hamburger-menu {
-
---x-width: calc(var(--hamburger-height)* 1.414);
+  --x-width: calc(var(--hamburger-height) * 1.414);
   display: flex;
   flex-direction: column;
-  gap: 6px; //hamburger-gap
+  gap: var(--hamburger-gap); //hamburger-gap
   width: max-content;
   position: absolute;
-  // top: 8px; //hamburger-margin
-  right: 8px; //hamburger-margin
+  top: var(--hamburger-margin); //hamburger-margin
+  right: var(--hamburger-margin); //hamburger-margin
   z-index: 2;
   cursor: pointer;
-  // height: 100px;
-  // background-color: red;
 }
 
 .hamburger-menu:has(input:checked) {
@@ -99,14 +95,11 @@
   --background-hm: var(--purple);
 }
 
-.hamburger-menu:has(input:focus-visible)::before, 
+.hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-  
   border: 1px solid var(--background-hm);
   box-shadow: 0 0 0 1px var(--foreground-hm);
-
-  
 }
 
 .hamburger-menu::before,
@@ -149,7 +142,7 @@
 }
 
 .sidebar {
- 
+  //  position: absolute;
   transition: translate var(--animation-timing);
   translate: 200%;
   padding: 0.5rem 1rem;
@@ -167,26 +160,30 @@
   translate: 0;
 }
 
-
 @media screen and (max-width: 768px) {
- 
-  .header{
-    padding: 1% 2%;
-    height: 100px;
-    .logo-text-frame{
+  .header {
+    display: flex;
+    padding: 0;
+    // height: max-content;
+    .logo-text-frame {
       font-size: 1rem;
-      padding: 0;
-      top: 0px;
-      left: 0px;
+      // padding: 0;
+      // top: 8px;
+      // left: 8px;
     }
   }
 
-  .hamburger-menu-frame{
-    display: flex;
+  .hamburger-menu-frame {
+    // display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
+  }
 
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.414);
+    gap: 8px; //hamburger-gap
+    top: 8px; //hamburger-margin
+    right: 8px; //hamburger-margin
   }
 }
-

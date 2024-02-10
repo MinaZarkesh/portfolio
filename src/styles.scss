@@ -7,9 +7,9 @@
   --text-color: #ffffff;
 
   //Hamburger Menu
-  --bar-width: 60px;
+  --bar-width: 64px;
   --bar-height: 8px;
-  --hamburger-gap: 6px;
+  --hamburger-gap: 8px;
   --foreground-hm: var(--purple);
   --background-hm: white;
   --hamburger-margin: 8px;
@@ -28,7 +28,7 @@
   font-family: "Poppins";
   // background-color: var(--dark-blue-BG);
   color: var(--text-color);
-  // margin: 0;
+  margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -36,10 +36,12 @@
 body {
   background-color: var(--dark-blue-BG);
   margin: 0;
+  // overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
   body{
+    margin: 0;
     overflow-x: hidden;
   }
 }
