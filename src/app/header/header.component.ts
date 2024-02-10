@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 
 export class HeaderComponent  {
 
-  view: 'desktop' | 'mobile' = 'desktop'; //mobile or desktop
+  view: 'desktop' | 'mobile' = 'mobile'; //mobile or desktop
   selectedIndex: number = -1; //for active link
 
   navLinks  = [
