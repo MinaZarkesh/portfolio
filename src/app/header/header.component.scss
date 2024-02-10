@@ -1,3 +1,4 @@
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,4 +30,108 @@
   text-decoration-color: var(--purple) !important;
   text-underline-offset: 16px !important;
   text-decoration-style: 2px !important;
+}
+
+.hamburger-menu-frame {
+  margin: 0;
+  height: 100%;
+  // width: 100px;
+  position: relative;
+  width: fit-content;
+}
+.hamburger-menu-frame *,
+*::after,
+*::before {
+  box-sizing: border-box;
+  // background-color: white;
+  color: black;
+}
+
+.hamburger-menu {
+
+--x-width: calc(var(--hamburger-height)* 1.414);
+  display: flex;
+  flex-direction: column;
+  gap: 6px; //hamburger-gap
+  width: max-content;
+  position: absolute;
+  top: 8px; //hamburger-margin
+  left: 8px; //hamburger-margin
+  z-index: 2;
+  cursor: pointer;
+  // height: 100px;
+  // background-color: red;
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground-hm: white;
+  --background-hm: var(--purple);
+}
+
+.hamburger-menu:has(input:focus-visible)::before, 
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  
+  border: 1px solid var(--background-hm);
+  box-shadow: 0 0 0 1px var(--foreground-hm);
+
+  
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width); //bar-width
+  height: var(--bar-height); //bar-height
+  background-color: var(--foreground-hm);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing); //animation-timing
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(8px / -2); //bar-heihgt / -2
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(8px / 2); //bar-heihgt/2
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+
+  &:checked {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.sidebar {
+ 
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc((8px * 3 + 6px * 2) + 8px + 1rem);
+  background-color: var(--foreground-hm);
+  width: 10rem;
+  max-width: 10rem;
+  min-height: 100vh;
+  div {
+    color: var(--background-hm);
+  }
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
 }

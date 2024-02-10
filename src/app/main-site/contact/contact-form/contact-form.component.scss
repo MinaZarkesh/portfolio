@@ -2,6 +2,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
+  background-color: var(--dark-blue-BG);
   width: 500px;
   padding: 12px;
   border: 1px solid var(--purple);
