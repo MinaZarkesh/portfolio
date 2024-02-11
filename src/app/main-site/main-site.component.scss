@@ -1,35 +1,33 @@
-app-hero{
-    display: flex;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    // gap: 5%;
-    padding: 5% 0%;
+app-hero {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  height: calc(100vh - 100px);
 }
 
-app-about{
-    display: flex;
-    width: 100vw;
-    max-width: 100%;
-    gap: 5%;
-    padding: 5% 0%;
+app-about {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  gap: 5%;
+  padding: 5% 0%;
 }
 
-app-skills{
-    position: relative;
-    display: flex;
-    width: 100vw;
-    height: fit-content;
-    max-width: 100%;
-    gap: 5%;
-    padding: 5% 0%;
+app-skills {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  max-width: 100%;
+  gap: 5%;
+  padding: 5% 0%;
 }
 
-app-projects{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    max-width: 100%;
-    gap: 5%;
-    padding: 5% 0%;
+app-projects {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  gap: 5%;
+  padding: 5% 0%;
 }
