@@ -3,19 +3,17 @@
     <div class="logo-text-frame">
       Mina Zarkesh
     </div>
-    <div class="links-header" *ngIf="view == 'desktop' " >
+    <div class="links-header"  >
      <a *ngFor="let navLink of navLinks; let i = index" href="{{navLink.href}}" [class.active]="i == selectedIndex" (click)="selectedIndex = i">{{navLink.text}} </a>
     </div>
-    <div class="hamburger-menu-frame" *ngIf="view == 'mobile'" >
+    <div class="hamburger-menu-frame" >
        <label class="hamburger-menu">
          <input type="checkbox"/>
        </label>
        <aside class="sidebar">
         <nav>
-            <div>This</div>
-            <div>is</div>
-            <div>the</div>
-            <div>sidebar</div>
+          <a *ngFor="let navLink of navLinks; let i = index" href="{{navLink.href}}" [class.active]="i == selectedIndex" (click)="selectedIndex = i">{{navLink.text}} </a>
+
         </nav>
        </aside>
     </div>

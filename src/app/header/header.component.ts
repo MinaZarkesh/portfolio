@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,13 +9,15 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-
 export class HeaderComponent  {
+  // view: 'desktop' | 'mobile' = 'desktop'; //mobile or desktop
 
-  view: 'desktop' | 'mobile' = 'mobile'; //mobile or desktop
+
+
+  
   selectedIndex: number = -1; //for active link
 
-  navLinks  = [
+  navLinks = [
     {
       href: '#about',
       text: 'About me',
@@ -36,6 +38,5 @@ export class HeaderComponent  {
     //   href: 'Hackathons',
     //   text: 'Hackathons',
     // },
-    
   ];
 }

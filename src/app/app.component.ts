@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MainSiteComponent } from './main-site/main-site.component';
@@ -13,6 +13,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'portfolio';
+export class AppComponent   {
+  title = 'Minas Portfolio';
 }
