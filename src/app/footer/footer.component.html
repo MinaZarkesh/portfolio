@@ -1,13 +1,12 @@
 <div class="container">
     <div class="frame">
-        <div class="logo">
-            <img src="assets/img/Logo.png" alt="">
-        </div>
+        <div class="logo-text-frame">
+            Mina Zarkesh
+          </div>
         <span>© Mina Zarkesh 2024</span>
-        <div class="icons">
-            <a href="#"><img src="assets/img/github.png" alt="github"></a>
-           <a href="mailto:mzarkesh@gmx.de"> <img src="assets/img/email.png" alt="email"></a>
-           <a href="#"><img src="assets/img/linkedin.png" alt="linkedin"></a>
+        <div class="icons" >
+            <a *ngFor="let icon of icons" href={{icon.link}} target="_blank"><img src="{{icon.img}}"></a>
+     
         </div>
     </div>
     <span>Impressum</span>
