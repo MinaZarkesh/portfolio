@@ -6,14 +6,13 @@
         <span class="title">Frontend Developer</span>
      </div>
     </div>
-    <button>Let's talk!</button>
+    <button (click)="toContact()">Let's talk!</button>
     
   <div class="bottom-frame">
     <div class="icons">
         <div class="line1"></div>
-        <a href="#"><img src="assets/img/github.png" alt="github"></a>
-       <a href="mailto:mzarkesh@gmx.de"> <img src="assets/img/email.png" alt="email"></a>
-       <a href="#"><img src="assets/img/linkedin.png" alt="linkedin"></a>
+        <a *ngFor="let icon of icons" href={{icon.link}} target="_blank"><img src="{{icon.img}}"></a>
+
     </div>
     <div class="cta"><span>Scroll down</span> <img src="assets/img/arrow-down-line.svg" alt="Pfeil"></div>  
     

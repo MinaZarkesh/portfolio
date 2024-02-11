@@ -87,8 +87,8 @@
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground-hm: var(--purple);
-  --background-hm: var(--purple);
+  --foreground-hm: var(--ligth-blue);
+  --background-hm: var(--ligth-blue);
 }
 
 .hamburger-menu:has(input:focus-visible)::before,

@@ -17,10 +17,10 @@ app-skills {
   position: relative;
   display: flex;
   width: 100vw;
-  height: fit-content;
   max-width: 100%;
-  gap: 5%;
-  padding: 5% 0%;
+  gap: 1.5rem;
+  margin: 5% 0%;
+  margin-top: 100px;
 }
 
 app-projects {
@@ -30,4 +30,5 @@ app-projects {
   max-width: 100%;
   gap: 5%;
   padding: 5% 0%;
+  margin-top: 100px;
 }
