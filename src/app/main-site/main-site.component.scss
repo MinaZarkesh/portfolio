@@ -32,3 +32,23 @@ app-projects {
   padding: 5% 0%;
   margin-top: 100px;
 }
+
+.go-up-frame{
+  display: flex;
+  justify-content: end;
+  width: 100vw;
+  max-width: 100%;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 1023px) {
+  .go-up-frame{
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .go-up-frame{
+    padding: 25px;
+  }
+}

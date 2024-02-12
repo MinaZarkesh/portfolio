@@ -3,7 +3,7 @@ input[type="email"],
 select,
 textarea {
   background-color: var(--dark-blue-BG);
-  width: 500px;
+  // width: 500px;
   padding: 12px;
   border: 1px solid var(--purple);
   border-radius: 10px;
@@ -55,6 +55,18 @@ input[type="checkbox"] {
   }
 }
 
+
+.privacy:has(input[type="checkbox"]:not(:checked)) input[type="submit"] {
+  background-color: rgba(182, 182, 182, 1);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
 input[type="submit"] {
   background-color: var(--green);
   color: white;
@@ -69,7 +81,7 @@ input[type="submit"] {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin-left: 25px;
   height: 100%;
   gap: 2rem;
   form {
@@ -111,14 +123,8 @@ input[type="submit"] {
   }
 }
 
-// mat-form-field {
-//   height: 48px;
-// }
-
-// mat-form-field {
-//     padding: 24px;
-//     height: 100px;
-//     input{
-//       height: 40px;
-//     }
-//   }
+@media screen and (max-width: 767px) {
+  .container {
+    margin-top: 25px;
+  }
+}
