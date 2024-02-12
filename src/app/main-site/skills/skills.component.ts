@@ -11,6 +11,10 @@ import { NgFor } from '@angular/common';
 
 export class SkillsComponent {
 
+  toContact() {
+    window.location.href = '#contact';
+  }
+  
   icon = {
     img: '',
     text: ''

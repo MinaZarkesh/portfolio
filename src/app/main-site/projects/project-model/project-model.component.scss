@@ -1,13 +1,14 @@
 .frame{
-    padding:  5%;
+    padding:  25px 100px;
     display: flex;
     width: fit-content;
     height: fit-content;
     gap: 2rem;
+    flex-direction: row;
+    align-items: center;
     img{
         height: fit-content;
         width: 50%;
-        margin: 0.5rem;
     }
 }
 
@@ -35,6 +36,7 @@
         color: var(--green);
     }
     .info-text{
+        justify-content: flex-start;
         font-size: 1rem;
     }
     .info-btn-group{
@@ -47,17 +49,154 @@
              background-color: var(--green);
              padding: 15px 30px;
              gap: 10px;
+
              border-radius: 10px;
              box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
            }
         .demo{
             background-color: var(--purple);
+            border: none;
 
         }
         .github{
             background-color: transparent;
             border: 1px solid var(--green);
 
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .frame{
+        padding:  5%;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        img{
+            height: fit-content;
+            width: 50%;
+        }
+    }
+    
+    .frame-left{
+        flex-direction: row-reverse;
+    }
+    
+    .frame-right{
+        flex-direction: row;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-inline: 0px;
+        gap: 1.5rem;
+        .info-title{
+            padding-top: 0.5rem;
+            font-size: 2rem;
+            color: var(--purple);
+        }
+        .info-subtitle{
+            font-size: 1rem;
+            color: var(--green);
+        }
+        .info-text{
+            justify-content: flex-start;
+            font-size: 1rem;
+        }
+        .info-btn-group{
+            display: flex;
+            gap: 4rem;
+            button {
+                width: fit-content;
+                display: flex;
+                white-space: nowrap;
+                 background-color: var(--green);
+                 padding: 15px 30px;
+                 gap: 10px;
+    
+                 border-radius: 10px;
+                 box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+               }
+            .demo{
+                background-color: var(--purple);
+                border: none;
+    
+            }
+            .github{
+                background-color: transparent;
+                border: 1px solid var(--green);
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .frame{
+        padding:  25px;
+        margin-bottom: 50px;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        gap: 2rem;
+        img{
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+    }
+
+    .frame-left{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .frame-right{
+        flex-direction: column;
+    }
+
+    .info{
+        padding-inline: 0px;
+        display: flex;
+        align-items: center;
+        .info-text{
+            display: flex;
+            text-align: center;
+            width: calc(100vw - 150px);
+        }
+
+        .info-btn-group{
+            gap: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-subtitle{
+            display: flex;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+
+    .info{
+        .info-text{
+            width: calc(100vw - 50px);
+        }
+        .info-btn-group{
+            gap: 1rem;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
