@@ -9,8 +9,8 @@
       {{project.text}}
     </span>
     <div class="info-btn-group">
-      <button class="demo">Live Demo</button>
-      <button class="github">Github</button>
+      <button (click)="toProject(project.demo)" class="demo">Live Demo</button>
+      <button (click)='toGithub()'  class="github">Github</button>
     </div>
   </div>
 </div>

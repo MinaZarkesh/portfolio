@@ -13,4 +13,13 @@ export class ProjectModelComponent {
   @Input() project: any; // Define the input property 'project'
   @Input() index: any; // Define the input property 'index'
   // Other component logic
+
+  toProject(link:string){
+    window.open(link);
+  }
+
+  toGithub(){
+    window.open('https://github.com/minazarkesh');
+  }
+
 }
