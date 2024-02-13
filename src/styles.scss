@@ -36,6 +36,13 @@
 body {
   background-color: var(--dark-blue-BG);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

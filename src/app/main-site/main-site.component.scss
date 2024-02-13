@@ -1,4 +1,5 @@
 app-hero {
+  scroll-margin-top: 100px;
   display: flex;
   width: 100vw;
   max-width: 100%;
@@ -6,6 +7,7 @@ app-hero {
 }
 
 app-about {
+  scroll-margin-top: 100px;
   display: flex;
   width: 100vw;
   max-width: 100%;
@@ -14,6 +16,7 @@ app-about {
 }
 
 app-skills {
+  scroll-margin-top: 100px;
   position: relative;
   display: flex;
   width: 100vw;
@@ -24,6 +27,7 @@ app-skills {
 }
 
 app-projects {
+  scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -31,6 +35,10 @@ app-projects {
   gap: 5%;
   padding: 5% 0%;
   margin-top: 100px;
+}
+
+app-contact {
+  scroll-margin-top: 100px;
 }
 
 .go-up-frame{

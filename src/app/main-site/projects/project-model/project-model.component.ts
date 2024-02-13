@@ -1,7 +1,6 @@
 import { NgIf, NgClass, CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-project-model',
   standalone: true,
@@ -21,5 +20,7 @@ export class ProjectModelComponent {
   toGithub(){
     window.open('https://github.com/minazarkesh');
   }
+
+
 
 }
