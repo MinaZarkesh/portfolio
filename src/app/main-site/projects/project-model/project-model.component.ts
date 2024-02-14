@@ -17,6 +17,12 @@ export class ProjectModelComponent  implements OnInit {
 
   ngOnInit(): void {
     // Initialization logic here
+   
+  }
+
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
     AOS.init();
   }
 

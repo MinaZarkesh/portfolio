@@ -6,6 +6,8 @@
     gap: 2rem;
     flex-direction: row;
     align-items: center;
+    width: 100vw;
+    max-width: 100%;
     img{
         height: fit-content;
         width: 50%;
@@ -52,16 +54,21 @@
 
              border-radius: 10px;
              box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+            
            }
         .demo{
             background-color: var(--purple);
             border: none;
-
+            &:hover {
+                background-color: var(--green);
+              }
         }
         .github{
             background-color: transparent;
             border: 1px solid var(--green);
-
+            &:hover {
+                border: 1px solid var(--purple);
+              }
         }
     }
 }

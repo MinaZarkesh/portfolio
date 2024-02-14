@@ -39,11 +39,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+}
+
+app-root{
+  width: 100vw;
+  max-width: 100%;
 }
 
 button{
   cursor: pointer;
 }
+
+@media screen and (min-width: 1440px) {
+  body{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    justify-self: center;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   body {

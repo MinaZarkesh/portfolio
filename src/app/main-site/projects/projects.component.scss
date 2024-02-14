@@ -49,6 +49,11 @@
   align-items: end;
 }
 
+app-projects{
+  overflow-x: hidden;
+}
+
+
 @media screen and (max-width: 1023px) {
   .text-right {
     .mySkills {

@@ -1,7 +1,9 @@
 app-header{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+    width: 100vw;
+    max-width: 100%;
 }
 
 
@@ -9,14 +11,6 @@ app-main-site{
     position: relative;
     display: flex;
     flex-direction: column;
-}
-
-
-@media screen and (min-width: 1920px) {
-    app-main-site{
-        // display: flex;
-        // justify-self: center;
-        max-width: 1440px;
-    }
-    
+    width: 100vw;
+    max-width: 100%;
 }

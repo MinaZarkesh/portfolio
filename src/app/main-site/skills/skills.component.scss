@@ -79,6 +79,9 @@
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+    &:hover {
+      background-color: var(--purple);
+    }
   }
 }
 
