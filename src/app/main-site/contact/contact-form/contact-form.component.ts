@@ -61,17 +61,19 @@ export class ContactFormComponent implements OnInit {
     }
   }
 
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     console.log(this.contactData);
-  //   }
-  // }
-
+  checkValidation(ngForm: NgForm): boolean {
+    if (ngForm.form.valid) {
+      return false;
+    } else {
+      return true;
+    }
+  }
   checkboxState: boolean = false;
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             //console.log(response);  //hier wird die Antwort vom Server angezeigt

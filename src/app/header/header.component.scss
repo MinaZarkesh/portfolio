@@ -11,6 +11,7 @@
   top: 0px;
 
   .logo-text-frame {
+    white-space: nowrap;
     font-size: 2rem;
     height: 100px;
     width: fit-content;
@@ -33,26 +34,38 @@
 
 .language-switcher {
   display: flex;
-  margin-right: 8px;
+  margin: 0px 12px;
   align-items: center;
 
   gap: 4px;
   flex-direction: column;
   button {
-    background-color: var(--purple);
+    background-color: transparent;
     width: 100%;
     border-radius: 10px;
-    border: none;
+    padding: 4px;
+    border: 1px solid var(--purple);
     font-size: 0.75rem;
   }
+
   @media screen and (max-width: 767px) {
     margin-right: 50px;
   }
 }
 
+.activeLang {
+  border: 1px solid var(--green) !important;
+}
+
+.header-right-frame {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .links-header {
   display: flex;
-  gap: 29px;
+  gap: 12px;
   a {
     align-items: center;
     font-size: 2rem;
@@ -232,5 +245,31 @@
     gap: var(--hamburger-gap); //hamburger-gap
     top: var(--hamburger-margin); //hamburger-margin
     right: var(--hamburger-margin); //hamburger-margin
+  }
+}
+
+.go-up-frame {
+  display: flex;
+  justify-content: end;
+  width: 100vw;
+  max-width: 100%;
+  padding: 50px 100px;
+  position: fixed;
+  bottom: 0;
+  img {
+    background-color: var(--dark-blue-BG);
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 25px;
   }
 }

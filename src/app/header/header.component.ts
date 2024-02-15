@@ -6,11 +6,13 @@ import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { Output } from '@angular/core';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
+
+
 
 @Component({
   selector: 'app-header',
@@ -27,13 +29,17 @@ export class HeaderComponent  {
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'de-du', 'de-sie']);
     this.translate.setDefaultLang('en');
+   
   }
+  
+  active_language:string = 'en';
 
   switchLanguage(language: string) {
     this.translate.use(language);
+     this.active_language = language;
   } 
 
-  selectedIndex: number = -1; //for active link
+  @Output()selectedIndex: number = -1; //for active link
 
   navLinks = [
     {

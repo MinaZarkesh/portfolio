@@ -3,36 +3,41 @@
   <div routerLink="/home" class="logo-text-frame">
     Mina Zarkesh
   </div>
-<div class="language-switcher">
-  <!-- <div>{{ 'Startpage.TranslationSections' | translate }}</div> -->
-  <button (click)="switchLanguage('de-du')">{{ 'header.DU' | translate }}</button>
-  <!-- <button (click)="switchLanguage('de-sie')">{{ 'header.DE' | translate }}</button> -->
-  <button (click)="switchLanguage('en')">{{ 'header.EN' | translate }}</button>
+<div class="header-right-frame">
+  <div  class="language-switcher">
+    <!-- <div>{{ 'Startpage.TranslationSections' | translate }}</div> -->
+    <button [class.activeLang]="active_language == 'de-du'" (click)="switchLanguage('de-du')" >{{ 'header.DU' | translate }}</button>
+    <!-- <button (click)="switchLanguage('de-sie')">{{ 'header.DE' | translate }}</button> -->
+    <button [class.activeLang]="active_language == 'en'" (click)="switchLanguage('en')">{{ 'header.EN' | translate }}</button>
+  </div>
+  
+    <div class="links-header">
+      <a
+        *ngFor="let navLink of navLinks; let i = index"
+        href="{{ navLink.href }}"
+        [class.active]="i == selectedIndex"
+        (click)="selectedIndex = i"
+        >{{ navLink.text | translate }}
+      </a>
+    </div>
+    <div class="hamburger-menu-frame">
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <a
+            *ngFor="let navLink of navLinks; let i = index"
+            href="{{ navLink.href }}"
+            [class.active]="i == selectedIndex"
+            (click)="selectedIndex = i"
+            >{{ navLink.text | translate }}
+          </a>
+        </nav>
+      </aside>
+    </div>
 </div>
-
-  <div class="links-header">
-    <a
-      *ngFor="let navLink of navLinks; let i = index"
-      href="{{ navLink.href }}"
-      [class.active]="i == selectedIndex"
-      (click)="selectedIndex = i"
-      >{{ navLink.text | translate }}
-    </a>
-  </div>
-  <div class="hamburger-menu-frame">
-    <label class="hamburger-menu">
-      <input type="checkbox" />
-    </label>
-    <aside class="sidebar">
-      <nav>
-        <a
-          *ngFor="let navLink of navLinks; let i = index"
-          href="{{ navLink.href }}"
-          [class.active]="i == selectedIndex"
-          (click)="selectedIndex = i"
-          >{{ navLink.text | translate }}
-        </a>
-      </nav>
-    </aside>
-  </div>
+</div>
+<div class="go-up-frame">
+  <a (click)="selectedIndex = -1" href="#hero"><img src="assets/img/go-up.svg" alt="Pfeil"></a>
 </div>

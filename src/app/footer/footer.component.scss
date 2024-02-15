@@ -8,6 +8,7 @@
   max-width: 100%;
   padding: 50px 100px;
   margin: 0;
+
   .frame {
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,8 @@
     }
   }
 
-  span {
+  a {
+    text-decoration: none;
     text-align: center;
     font-size: 2rem;
     display: flex;
@@ -71,7 +73,7 @@
         font-size: 1.5rem;
       }
     }
-    span {
+    a {
       font-size: 1.5rem;
       display: flex;
     }
@@ -91,7 +93,7 @@
         font-size: 1.5rem;
       }
     }
-    span {
+    a {
       font-size: 1.5rem;
       display: flex;
       justify-content: center;

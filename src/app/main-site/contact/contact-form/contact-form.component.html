@@ -21,7 +21,6 @@
       name="email"
       placeholder="{{ 'contact.FORM_EMAIL' | translate }}"
       required
-      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
     />
 
     @if (!email.valid && email.touched) {
@@ -62,7 +61,7 @@
         <span class="privacy-text">{{'contact.FORM_CHECKED'| translate}}</span>
         }
       </div>
-      <input type="submit" value="{{ 'contact.FORM_SUBMIT' | translate}}" />
+      <input [disabled]="checkValidation(contactForm)" type="submit" value="{{ 'contact.FORM_SUBMIT' | translate}}" />
     </div>
   </form>
 </div>
