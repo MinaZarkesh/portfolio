@@ -11,10 +11,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from '@ngx-translate/core';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -31,13 +27,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 
 export class AppComponent  {
-  constructor(public translate: TranslateService) {
-    this.translate.setDefaultLang('en');
-  }
 
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
+
+
 
   title = 'Minas Portfolio';
 }

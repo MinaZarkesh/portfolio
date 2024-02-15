@@ -10,6 +10,7 @@
   position: fixed;
   top: 0px;
 
+
   .logo-text-frame {
     font-size: 2rem;
     height: 100px;
@@ -28,6 +29,11 @@
       var(--purple) 50%,
       var(--ligth-blue) 90%
     );
+  }
+
+  language-switcher {
+    display: flex;
+    flex-direction: row;
   }
 }
 

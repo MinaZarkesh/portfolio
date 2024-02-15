@@ -1,3 +1,9 @@
 {
-    "HELLO": "Hallo Welt"
+    "Startpage": {
+        "TranslationSections": "Hallo Welt"
+    },
+  "ABOUT": "Über mich",
+  "SKILLS": "Fähigkeiten",
+  "PORTFOLIO": "Portfolio",
+  "CONTACT": "Kontakt"
 }

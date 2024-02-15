@@ -1,21 +1,37 @@
 <div class="header">
-    <!-- <img src="assets/img/Logo.png" alt=""> -->
-    <div routerLink="/home" class="logo-text-frame">
-      Mina Zarkesh
-    </div>
-    <div class="links-header"  >
-     <a *ngFor="let navLink of navLinks; let i = index" href="{{navLink.href}}" [class.active]="i == selectedIndex" (click)="selectedIndex = i">{{navLink.text}} </a>
-    </div>
-    <div class="hamburger-menu-frame" >
-       <label class="hamburger-menu">
-         <input type="checkbox"/>
-       </label>
-       <aside class="sidebar">
-        <nav>
-          <a *ngFor="let navLink of navLinks; let i = index" href="{{navLink.href}}" [class.active]="i == selectedIndex" (click)="selectedIndex = i">{{navLink.text}} </a>
+  <!-- <img src="assets/img/Logo.png" alt=""> -->
+  <div routerLink="/home" class="logo-text-frame">
+    Mina Zarkesh
+  </div>
+<div class="language-switcher">
+  <div>{{ 'Startpage.TranslationSections' | translate }}</div>
+  <button (click)="switchLanguage('de')">DE</button>
+  <button (click)="switchLanguage('en')">EN</button>
+</div>
 
-        </nav>
-       </aside>
-    </div>
-
+  <div class="links-header">
+    <a
+      *ngFor="let navLink of navLinks; let i = index"
+      href="{{ navLink.href }}"
+      [class.active]="i == selectedIndex"
+      (click)="selectedIndex = i"
+      >{{ navLink.text | translate }}
+    </a>
+  </div>
+  <div class="hamburger-menu-frame">
+    <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <a
+          *ngFor="let navLink of navLinks; let i = index"
+          href="{{ navLink.href }}"
+          [class.active]="i == selectedIndex"
+          (click)="selectedIndex = i"
+          >{{ navLink.text }}
+        </a>
+      </nav>
+    </aside>
+  </div>
 </div>
