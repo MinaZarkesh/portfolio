@@ -34,7 +34,6 @@
 .language-switcher {
   display: flex;
   margin-right: 8px;
-  // margin-top: 37px;
   align-items: center;
 
   gap: 4px;
@@ -47,7 +46,6 @@
     font-size: 0.75rem;
   }
   @media screen and (max-width: 767px) {
-    // margin-top: 25px;
     margin-right: 50px;
   }
 }
