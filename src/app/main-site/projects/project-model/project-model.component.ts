@@ -1,11 +1,13 @@
 import { NgIf, NgClass, CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import  AOS from 'aos';
+
 @Component({
   selector: 'app-project-model',
   standalone: true,
-  imports: [NgIf, NgClass , CommonModule],
+  imports: [NgIf, NgClass , CommonModule, TranslateModule],
   templateUrl: './project-model.component.html',
   styleUrl: './project-model.component.scss'
 })

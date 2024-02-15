@@ -3,13 +3,14 @@ import { Component } from '@angular/core';
 // import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {ContactFormComponent} from '../contact/contact-form/contact-form.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ContactFormComponent],
+  imports: [FormsModule, ContactFormComponent, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

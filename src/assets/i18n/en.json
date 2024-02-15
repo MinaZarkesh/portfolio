@@ -1,9 +1,70 @@
 {
-    "Startpage": {
-        "TranslationSections": "Hello World"
-    },
-  "ABOUT": "About me",
-  "SKILLS": "Skills",
-  "PORTFOLIO": "Portfolio",
-  "CONTACT": "Contact"
+  "Startpage": {
+    "TranslationSections": "Hello World"
+  },
+  "header": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact",
+    "EN": "English",
+    "DE": "Ich bleibe beim Sie",
+    "DU": "Gerne per Du"
+  },
+  "hero": {
+    "SCROLL": "Scroll down",
+    "TALK": "Let's talk"
+  },
+  "about": {
+    "HEADLINE": "About me",
+    "SUBTITLE": "Hi, I am a Front-end deverloper based in München, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.",
+    "BULB": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "PUZZLE": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+  },
+  "skills": {
+    "HEADLINE": "My Skills",
+    "SUBTITLE": "I have gained experience in building projects with various front end technologies and concepts.",
+    "BUTTON": "Get in touch"
+  },
+  "portfolio": {
+    "HEADLINE": "Portfolio",
+    "SUBTITLE": "This page is a sample of my work - please feel free to try them out.",
+    "LIVE_DEMO": "Live Demo",
+    "CODE": "Github",
+    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "SHARKIE": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+    "SIMPLE_CRM": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+    "POKEDEX": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "CRYPTO_CONVERTER": "Simple currency converter based on a public API displaying exchange rate charts."
+  },
+  "contact": {
+    "HEADLINE": "Contact",
+    "INFO_HEADLINE": "Got a poblem to solve?",
+    "INFO_TEXT": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+    "INFO_SUBLINE": "Need a Frontend developer?",
+    "INFO_LINK": "Contact me!",
+    "FORM_NAME": "Your name",
+    "FORM_EMAIL": "Your email",
+    "FORM_MESSGE": "Your message",
+    "FORM_CHECKBOX_PART1": "I've read the",
+    "FORM_CHECKBOX_LINK": "privacy policy",
+    "FORM_CHECKBOX_PART2": "and agree to the processing of my data as outlined",
+    "FORM_MESSAGE_REQUIRED": "is required",
+    "FORM_UNCHECKED": "Please accept the privacy policy.",
+    "FORM_CHECKED": "Privacy policy accepted.",
+    "FORM_SUBMIT": "Send Message :)"
+  },
+  "footer": {
+    "IMPRINT": "Imprint",
+    "PRIVACY": "Privacy Policy"
+  },
+  "IMPRINT": {
+    "HEADLINE": "Imprint",
+    "SUBTITLE": "According to § 5 TMG",
+    "CONTACT": "Contact",
+    "PHONE": "Phone",
+    "EMAIL": "Email",
+    "SOURCE": "Source: "
+
+  }
 }

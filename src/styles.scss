@@ -7,12 +7,12 @@
   --text-color: #ffffff;
 
   //Hamburger Menu
-  --bar-width: 64px;
-  --bar-height: 8px;
-  --hamburger-gap: 8px;
+  --bar-width: 32px;
+  --bar-height: 4px;
+  --hamburger-gap: 4px;
   --foreground-hm: var(--purple);
   --background-hm: white;
-  --hamburger-margin: 8px;
+  --hamburger-margin: 4px;
   --animation-timing: 0.2s ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }

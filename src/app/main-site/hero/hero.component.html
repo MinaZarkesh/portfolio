@@ -6,7 +6,7 @@
         <span class="title">Frontend Developer</span>
      </div>
     </div>
-    <button (click)="toContact()">Let's talk!</button>
+    <button (click)="toContact()">{{'hero.TALK' | translate}}</button>
     
   <div class="bottom-frame">
     <div class="icons">
@@ -14,7 +14,7 @@
         <a *ngFor="let icon of icons" href={{icon.link}} target="_blank"><img src="{{icon.img}}"></a>
 
     </div>
-    <div class="cta"><span>Scroll down</span> <img src="assets/img/arrow-down-line.svg" alt="Pfeil"></div>  
+    <div class="cta"><span>{{ 'hero.SCROLL' | translate }}</span> <img src="assets/img/arrow-down-line.svg" alt="Pfeil"></div>  
     
   </div>
 </div>

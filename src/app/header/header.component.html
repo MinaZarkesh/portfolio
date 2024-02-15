@@ -4,9 +4,10 @@
     Mina Zarkesh
   </div>
 <div class="language-switcher">
-  <div>{{ 'Startpage.TranslationSections' | translate }}</div>
-  <button (click)="switchLanguage('de')">DE</button>
-  <button (click)="switchLanguage('en')">EN</button>
+  <!-- <div>{{ 'Startpage.TranslationSections' | translate }}</div> -->
+  <button (click)="switchLanguage('de-du')">{{ 'header.DU' | translate }}</button>
+  <button (click)="switchLanguage('de-sie')">{{ 'header.DE' | translate }}</button>
+  <button (click)="switchLanguage('en')">{{ 'header.EN' | translate }}</button>
 </div>
 
   <div class="links-header">
@@ -29,7 +30,7 @@
           href="{{ navLink.href }}"
           [class.active]="i == selectedIndex"
           (click)="selectedIndex = i"
-          >{{ navLink.text }}
+          >{{ navLink.text | translate }}
         </a>
       </nav>
     </aside>

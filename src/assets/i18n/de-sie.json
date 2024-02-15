@@ -1,0 +1,70 @@
+{
+  "Startpage": {
+    "TranslationSections": "Hallo Welt"
+  },
+  "header": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt",
+    "EN": "English",
+    "DE": "Ich bleibe beim Sie",
+    "DU": "Gerne per Du"
+  },
+  "hero": {
+    "SCROLL": "Runterscrollen",
+    "TALK": "Lassen Sie uns reden"
+  },
+  "about": {
+    "HEADLINE": "Über mich",
+    "SUBTITLE": "Hi, Ich bin eine Front-end Entwicklerin aus Hannover, Deutschland(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.",
+    "BULB": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "PUZZLE": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+  },
+  "skills": {
+    "HEADLINE": "Meine Skills",
+    "SUBTITLE": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend Technologien und Konzepten.",
+    "BUTTON": "In Kontakt treten"
+  },
+  "portfolio": {
+    "HEADLINE": "Portfolio",
+    "SUBTITLE": "Diese Seite zeigt eine Auswahl meiner Arbeiten – probieren Sie sie gerne aus.",
+    "LIVE_DEMO": "Live Demo",
+    "CODE": "Github",
+    "JOIN": "Vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu und bearbeiten Sie Ihre Kontakte.",
+    "SHARKIE": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Helfen Sie Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+    "SIMPLE_CRM": "Ein sehr einfaches Customer-Relationship-Management-System, das mit CRUD-Funktionalität arbeitet.",
+    "POKEDEX": "Basierend auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+    "CRYPTO_CONVERTER": "Einfacher Währungsumrechner basierend auf einer öffentlichen API, der Wechselkursdiagramme anzeigt."
+  },
+  "contact": {
+    "HEADLINE": "Kontakt",
+    "INFO_HEADLINE": "Haben Sie ein Problem zu lösen?",
+    "INFO_TEXT": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert von Ihnen zu hören und Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "INFO_SUBLINE": "Brauchen Sie einen Frontend-Entwickler?",
+    "INFO_LINK": "Schreiben Sie mir!",
+    "FORM_NAME": "Ihr Name",
+    "FORM_EMAIL": "Ihre Email",
+    "FORM_MESSGE": "Ihre Nachricht",
+    "FORM_CHECKBOX_PART1": "Ich habe die ",
+    "FORM_CHECKBOX_LINK": "Datenschutzrichtlinie",
+    "FORM_CHECKBOX_PART2": "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu",
+    "FORM_MESSAGE_REQUIRED": "wird benötigt",
+    "FORM_UNCHECKED": "Stimmen Sie der Datenschutzrichtlinie zu.",
+    "FORM_CHECKED": "Datenschutzrichtlinie zugestimmt.",
+    "FORM_SUBMIT": "Nachricht versenden :)"
+  },
+  "footer": {
+    "IMPRINT": "Impressum",
+    "PRIVACY": "Datenschutzrichtlinie"
+  },
+  "IMPRINT": {
+    "HEADLINE": "Impressum",
+    "SUBTITLE": "Angaben gemäß § 5 TMG",
+    "CONTACT": "Kontakt",
+    "PHONE": "Telefon",
+    "EMAIL": "E-Mail",
+    "SOURCE": "Quelle: "
+
+  }
+}

@@ -25,6 +25,7 @@ export class HeaderComponent  {
   // view: 'desktop' | 'mobile' = 'desktop'; //mobile or desktop
 
   constructor(public translate: TranslateService) {
+    translate.addLangs(['en', 'de-du', 'de-sie']);
     this.translate.setDefaultLang('en');
   }
 
@@ -37,19 +38,19 @@ export class HeaderComponent  {
   navLinks = [
     {
       href: '#about',
-      text: this.translate.instant('Startpage.TranslationSections' ),
+      text: this.translate.instant('header.ABOUT' ),
     },
     {
       href: '#skills',
-      text: this.translate.instant('SKILLS'),
+      text: this.translate.instant('header.SKILLS'),
     },
     {
       href: '#projects',
-      text: this.translate.instant('PORTFOLIO'),
+      text: this.translate.instant('header.PORTFOLIO'),
     },
     {
       href: '#contact',
-      text: this.translate.instant('CONTACT'),
+      text: this.translate.instant('header.CONTACT'),
     },
     // {
     //   href: 'Hackathons',

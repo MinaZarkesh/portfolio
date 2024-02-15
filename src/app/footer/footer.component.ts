@@ -1,12 +1,13 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { Router } from 'express';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgFor, RouterLink],
+  imports: [NgFor, RouterLink, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

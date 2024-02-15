@@ -6,22 +6,26 @@
       type="text"
       id="name"
       name="name"
-      placeholder="Your name"
+      placeholder="{{ 'contact.FORM_NAME' | translate }}"
+      required
       required
     />
+    @if (!name.valid && name.touched) {
+      <span class="hint"> {{'contact.FORM_NAME' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}}</span>
+      }
        <input
       #email="ngModel"
       [(ngModel)]="contactData.email"
       type="email"
       id="email"
       name="email"
-      placeholder="Your email"
+      placeholder="{{ 'contact.FORM_EMAIL' | translate }}"
       required
       pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
     />
 
     @if (!email.valid && email.touched) {
-    <span class="hint">Email is required</span>
+      <span class="hint"> {{'contact.FORM_EMAIL' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}} z.B. test&commat;email.de</span>
     }
 
     <textarea
@@ -30,12 +34,12 @@
       [(ngModel)]="contactData.message"
       id="message"
       name="message"
-      placeholder="Your message"
+      placeholder="{{ 'contact.FORM_MESSGE' | translate }}"
       style="height: 200px"
       required
     ></textarea>
     @if (!message.valid && message.touched) {
-    <span class="hint">Message is required</span>
+      <span class="hint"> {{'contact.FORM_MESSGE' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}}</span>
     }
     <div class="privacy">
       <div class="privacy-check-frame">
@@ -49,17 +53,16 @@
             required
           />
           <span
-            >I've read the <a href="#">privacy policy</a> and agree to the
-            processing of my data as outlined</span
+            >{{ 'contact.FORM_CHECKBOX_PART1' | translate }}<a href="#">{{ 'contact.FORM_CHECKBOX_LINK' | translate}}</a> {{ 'contact.FORM_CHECKBOX_PART2' | translate }}</span
           >
         </div>
         @if (!checkboxState) {
-        <span class="privacy-text hint">Please accept the privacy policy.</span>
+        <span class="privacy-text hint">{{'contact.FORM_UNCHECKED'| translate}}</span>
         } @else{
-        <span class="privacy-text">Privacy policy accepted.</span>
+        <span class="privacy-text">{{'contact.FORM_CHECKED'| translate}}</span>
         }
       </div>
-      <input type="submit" value="Send Message :)" />
+      <input type="submit" value="{{ 'contact.FORM_SUBMIT' | translate}}" />
     </div>
   </form>
 </div>
