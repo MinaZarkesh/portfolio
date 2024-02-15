@@ -4,7 +4,7 @@ import { MainSiteComponent } from './main-site/main-site.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 
 export const routes: Routes = [
-{path: '', title: 'Home', component:MainSiteComponent},
-{path: 'home', title: 'Home', component:MainSiteComponent},
-{path: 'impressum', title: 'Home', component:ImpressumComponent},
+{path: '', component:MainSiteComponent},
+{path: 'home',  component:MainSiteComponent},
+{path: 'impressum', component:ImpressumComponent},
 ];
