@@ -251,11 +251,12 @@
 .go-up-frame {
   display: flex;
   justify-content: end;
-  width: 100vw;
+  width: fit-content;
   max-width: 100%;
-  padding: 50px 100px;
+  // padding: 50px 100px;
   position: fixed;
-  bottom: 0;
+  right: 100px;
+  bottom: 50px;
   img {
     background-color: var(--dark-blue-BG);
     border-radius: 50%;
@@ -263,13 +264,18 @@
 
   @media screen and (min-width: 1440px) {
     width: 1440px;
+    bottom: 25px;
+    right: auto;
+    
   }
 
   @media screen and (max-width: 1023px) {
-    padding: 50px;
+    bottom: 25px;
+    right: 50px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 25px;
+    bottom: 25px;
+    right: 25px;
   }
 }

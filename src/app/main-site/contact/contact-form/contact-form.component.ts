@@ -21,6 +21,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent implements OnInit {
+
   http = inject(HttpClient);
 
   ngOnInit(): void {
@@ -36,11 +37,11 @@ export class ContactFormComponent implements OnInit {
 
   outline: boolean = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint:
-      'https://mina-zarkesh.developerakademie.net/angular-projects/portfolio/sendMail.php',
+      'https://mina-zarkesh.developerakademie.net/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -71,12 +72,14 @@ export class ContactFormComponent implements OnInit {
   checkboxState: boolean = false;
 
   onSubmit(ngForm: NgForm) {
+    console.log(this.contactData);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      console.log('Email was not sent yet. Test');
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            //console.log(response);  //hier wird die Antwort vom Server angezeigt
+            console.log(response);  //hier wird die Antwort vom Server angezeigt
             ngForm.resetForm();
           },
           error: (error) => {

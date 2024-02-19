@@ -6,7 +6,8 @@
 
 .hero-section {
   scroll-margin-top: 100px;
-  background-image: url("../../../assets/img/shadows-hero.svg");
+  // background-image: url("../../../assets/img/shadows-hero.svg");
+  box-shadow: 0 0 8px 8px var(--dark-blue-BG) inset;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,6 +30,32 @@
     box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
     &:hover {
       background-color: var(--purple);
+    }
+  }
+  .background-img {
+    position: absolute;
+    width: 100vw;
+    max-width: 2000px;
+    height: 80%;
+    display: flex;
+    margin: auto;
+
+    .hero-bg {
+      position: absolute;
+      width: 50%;
+      max-width: 600px;
+      transform: translate(0, -50%);
+      @media screen and (min-width: 2560px) {
+        position: fixed;
+      }
+      &.bg-left {
+        top: 47%;
+        left: 25px;
+      }
+      &.bg-right {
+        top: 66%;
+        right: 25px;
+      }
     }
   }
 }
