@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeroComponent {
 
+
   icons = [
     {
       img: 'assets/img/github.png',
@@ -29,4 +30,7 @@ export class HeroComponent {
   toContact() {
     window.location.href = '#contact';
   }
+
+
+
 }
