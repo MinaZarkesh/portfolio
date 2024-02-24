@@ -1,82 +1,110 @@
-// *{
-//   background-color: #172530;
+* {
+  background-color: #172530;
+}
+
+// .text-right {
+//   display: flex;
+//   width: 66%;
+//   flex-direction: column;
+//   gap: 24px;
+//   justify-content: end;
+//   .mySkills {
+//     display: flex;
+//     height: fit-content;
+//     gap: 1.5rem;
+//     width: 100%;
+//     align-items: center;
+//     flex-direction: row;
+//     span {
+//       height: fit-content;
+//       white-space: nowrap;
+//       font-weight: 700;
+//       font-size: 4rem;
+//       line-height: 100%;
+//     }
+//     .line3 {
+//       flex: 1;
+//       height: 4px;
+//       border-bottom: 4px solid var(--purple);
+//     }
+//   }
+
+//   .mySkills-text {
+//     margin-top: 24px;
+//     width: 66%;
+//   }
+
+//   button {
+//     width: fit-content;
+//     background-color: var(--green);
+//     padding: 15px 30px;
+//     gap: 10px;
+//     border-radius: 10px;
+//     box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+//   }
 // }
 
+// .headline {
+//   display: flex;
+//   width: 100%;
+//   flex-direction: column;
+//   gap: 24px;
+//   align-items: end;
+// }
+
+// @media screen and (max-width: 1023px) {
+//   .text-right {
+//     .mySkills {
+//       span {
+//         font-size: 3rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 424px) {
+//   .text-right {
+//     padding: 25px;
+//     padding-right: 0px;
+//     width: 100%;
+//     .mySkills {
+//       span {
+//         padding: 0;
+//         padding-right: 25px;
+//         font-size: 3rem;
+//       }
+//     }
+//     .mySkills-text{
+//       margin-top: 0px;
+//     }
+//   }
+// }
 
 .text-right {
+
+  padding: 100px 16px;
+  
+  width: 100vw;
+  max-width: 100%;
   display: flex;
-  width: 66%;
+  color: white;
+  align-items: center;
   flex-direction: column;
-  gap: 24px;
-  justify-content: end;
   .mySkills {
-    display: flex;
-    height: fit-content;
-    gap: 1.5rem;
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    span {
-      height: fit-content;
-      white-space: nowrap;
-      font-weight: 700;
-      font-size: 4rem;
-      line-height: 100%;
-    }
-    .line3 {
-      flex: 1;
-      height: 4px;
-      border-bottom: 4px solid var(--purple);
-    }
-  }
-
-  .mySkills-text {
-    margin-top: 24px;
-    width: 66%;
-  }
-
-  button {
     width: fit-content;
-    background-color: var(--green);
-    padding: 15px 30px;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+    span {
+
+      // width: fit-content;
+      color: white;
+      font-size: 48px;
+      line-height: 140%;
+      font-weight: 700;
+    }
+  }
+  span{
+    text-align: center;
+   font-size: 2rem;
+   width: fit-content;
   }
 }
 
-.headline {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 24px;
-  align-items: end;
-}
-
-@media screen and (max-width: 1023px) {
-  .text-right {
-    .mySkills {
-      span {
-        font-size: 3rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 424px) {
-  .text-right {
-    padding: 25px;
-    padding-right: 0px;
-    width: 100%;
-    .mySkills {
-      span {
-        padding: 0;
-        padding-right: 25px;
-        font-size: 3rem;
-      }
-    }
-    .mySkills-text{
-      margin-top: 0px;
-    }
-  }
-}

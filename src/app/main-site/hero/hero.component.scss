@@ -206,11 +206,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
-.light-ball{
+.light-ball {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -230,7 +228,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-z-index: 20;
+  z-index: 20;
   .photo {
     background: url(../../../assets/img/hero-character-photo.png),
       linear-gradient(
@@ -240,7 +238,7 @@ z-index: 20;
         #fff calc(50%),
         #fff 100%
       );
-      box-shadow: 0px 0px 83px rgba($color: #000, $alpha: 0.8);
+    box-shadow: 0px 0px 83px rgba($color: #000, $alpha: 0.8);
     // #f1e3d7
     mix-blend-mode: difference;
   }
@@ -306,3 +304,40 @@ z-index: 20;
   mix-blend-mode: overlay;
 }
 
+.icons-frame {
+  position: absolute;
+  gap: 16px;
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .icons-1, .icons-2, .icons-3, .icons-4 {
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+    border-radius: 50%;
+  }
+  .icons-1 {
+    background-color: #3e2840;
+    box-shadow: 0px 4px 23px #3e2840;
+  }
+  .icons-2 {
+    background-color: #293640;
+    box-shadow: 0px 4px 23px #293640;
+  }
+  .icons-3 {
+    background-color: #452523;
+    box-shadow: 0px 4px 23px #452523;
+  }
+  .icons-4 {
+    background-color: #2B4029;
+    box-shadow: 0px 4px 23px #2B4029;
+  }
+}
