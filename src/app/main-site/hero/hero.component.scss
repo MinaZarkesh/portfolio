@@ -188,6 +188,8 @@
 
 .frame {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 0;
   z-index: -1;
   background: linear-gradient(
@@ -204,6 +206,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+}
+
+.light-ball{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  filter: blur(300px);
+  border-radius: 50%;
+  background-color: rgba($color: #fff, $alpha: 0.8);
 }
 
 .img-frame {
@@ -214,17 +230,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+z-index: 20;
   .photo {
     background: url(../../../assets/img/hero-character-photo.png),
       linear-gradient(
         300deg,
-        #f1e3d7  0%,
-        #f1e3d7  calc(50%),
+        #0e1c28 0%,
+        #0e1c28 calc(50%),
         #fff calc(50%),
         #fff 100%
       );
-
+      box-shadow: 0px 0px 83px rgba($color: #000, $alpha: 0.8);
+    // #f1e3d7
     mix-blend-mode: difference;
   }
 
@@ -261,24 +278,31 @@
   color: #cdd2db;
 }
 
+.headline {
+  display: flex;
+  gap: 320px;
+  left: 1.5%;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  max-width: 100%;
+  justify-self: center;
+}
+
 .headline-text-01,
 .headline-text-02 {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
   width: fit-content;
   height: fit-content;
-  font-size: min(5vw, 80px);
-  font-weight: 700;
-  line-height: 100%;
+  font-size: min(5vw, 128px);
+  font-weight: 900;
+  line-height: 150%;
   color: #ededed;
 }
 
 .headline-text-01 {
-  left: 5%;
+  color: #334b60;
   mix-blend-mode: overlay;
 }
 
-.headline-text-02 {
-  right: 5%;
-}
