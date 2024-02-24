@@ -1,3 +1,7 @@
+// *{
+//   background-color: #172530;
+// }
+
 
 .text-right {
   display: flex;
@@ -48,11 +52,6 @@
   gap: 24px;
   align-items: end;
 }
-
-app-projects{
-  overflow-x: hidden;
-}
-
 
 @media screen and (max-width: 1023px) {
   .text-right {

@@ -24,6 +24,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Borel";
+  src: url("assets/fonts/Borel/Borel-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style:italic;
+}
+
 * {
   font-family: "Poppins";
   // background-color: var(--dark-blue-BG);

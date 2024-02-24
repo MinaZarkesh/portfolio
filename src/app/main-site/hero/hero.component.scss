@@ -181,7 +181,7 @@
 // //   }
 // }
 
-.header{
+.header {
   position: absolute;
   top: 0;
 }
@@ -193,8 +193,8 @@
   background: linear-gradient(
     120deg,
     #0e1c28 0%,
-    #0e1c28 55vw,
-    #fff 55vw,
+    #0e1c28 calc(50%),
+    #fff calc(50%),
     #fff 100%
   );
   // background: #0e1c28;
@@ -215,16 +215,14 @@
   justify-content: center;
   align-items: center;
 
-
-
   .photo {
     background: url(../../../assets/img/hero-character-photo.png),
       linear-gradient(
-        120deg,
-        #f1e3d7 0%,
-        #f1e3d7 55vw,
-        #0e1c28 55vw,
-        #0e1c28 100%
+        300deg,
+        #f1e3d7  0%,
+        #f1e3d7  calc(50%),
+        #fff calc(50%),
+        #fff 100%
       );
 
     mix-blend-mode: difference;
@@ -250,4 +248,37 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }
+}
+
+.name {
+  position: absolute;
+  top: 20%;
+  left: 5vw;
+  font-family: "Borel";
+  font-size: min(4vw, 80px);
+  font-weight: 100;
+  line-height: 100%;
+  color: #cdd2db;
+}
+
+.headline-text-01,
+.headline-text-02 {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: fit-content;
+  height: fit-content;
+  font-size: min(5vw, 80px);
+  font-weight: 700;
+  line-height: 100%;
+  color: #ededed;
+}
+
+.headline-text-01 {
+  left: 5%;
+  mix-blend-mode: overlay;
+}
+
+.headline-text-02 {
+  right: 5%;
 }

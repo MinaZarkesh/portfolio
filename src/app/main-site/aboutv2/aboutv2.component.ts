@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './aboutv2.component.scss'
 })
 export class Aboutv2Component {
+  
 
 }
