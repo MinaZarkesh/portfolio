@@ -1,16 +1,14 @@
 <div class="header">
-  <!-- <img src="assets/img/Logo.png" alt=""> -->
-  <div routerLink="/home" class="logo-text-frame">
+  <img src="assets/img/Logo.png" alt="" />
+  <!-- <div routerLink="/home" class="logo-text-frame">
     Mina Zarkesh
-  </div>
-<div class="header-right-frame">
-  <div  class="language-switcher">
-    <!-- <div>{{ 'Startpage.TranslationSections' | translate }}</div> -->
+  </div> -->
+  <div class="header-right-frame">
+    <!-- <div  class="language-switcher">
     <button [class.activeLang]="active_language == 'de-du'" (click)="switchLanguage('de-du')" >{{ 'header.DU' | translate }}</button>
-    <!-- <button (click)="switchLanguage('de-sie')">{{ 'header.DE' | translate }}</button> -->
     <button [class.activeLang]="active_language == 'en'" (click)="switchLanguage('en')">{{ 'header.EN' | translate }}</button>
-  </div>
-  
+  </div> -->
+
     <div class="links-header">
       <a
         *ngFor="let navLink of navLinks; let i = index"
@@ -36,8 +34,10 @@
         </nav>
       </aside>
     </div>
-</div>
+  </div>
 </div>
 <div class="go-up-frame">
-  <a (click)="selectedIndex = -1" href="#hero"><img src="assets/img/go-up.svg" alt="Pfeil"></a>
+  <a (click)="selectedIndex = -1" href="#hero"
+    ><img src="assets/img/go-up.svg" alt="Pfeil"
+  /></a>
 </div>

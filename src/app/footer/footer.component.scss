@@ -1,3 +1,8 @@
+* {
+  color: #282938;
+  // background-color: #282938;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -49,6 +54,7 @@
       display: flex;
       gap: 2.6rem;
       height: 40px;
+
     }
   }
 
@@ -57,6 +63,14 @@
     text-align: center;
     font-size: 2rem;
     display: flex;
+    img{  display: flex;
+      width: 60px;
+      height: 60px;
+      padding: 12px;
+      border-radius: 50%;
+      background-color: #3e2840;
+      box-shadow: 0px 4px 24px #3e2840;
+    }
   }
 }
 
@@ -82,7 +96,7 @@
 
 @media (max-width: 767px) {
   .container {
-    padding:  25px;
+    padding: 25px;
 
     .frame {
       padding: 25px;

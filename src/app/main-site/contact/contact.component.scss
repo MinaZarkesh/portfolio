@@ -1,11 +1,17 @@
+
+
 .headline {
+  padding-top: 50px;
   display: flex;
   height: fit-content;
   align-items: center;
   flex-direction: row;
 
   .contact-headline {
-    padding-left: 25px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    // padding-left: 100px;
     height: fit-content;
     white-space: nowrap;
     font-weight: 700;
@@ -13,11 +19,11 @@
     line-height: 100%;
   }
 
-  .line3 {
-    width: 75px;
-    height: 4px;
-    border-bottom: 4px solid var(--purple);
-  }
+  // .line3 {
+  //   width: 75px;
+  //   height: 4px;
+  //   border-bottom: 4px solid var(--purple);
+  // }
 }
 
 a{
@@ -131,4 +137,9 @@ app-contact-form{
   border-radius: 8px;
   background-color: #f5f8ff;
   color: #282938;
+}
+
+*{
+  color: #282938;
+  background-color: #f5f8ff;
 }

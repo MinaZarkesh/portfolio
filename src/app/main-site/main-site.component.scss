@@ -33,6 +33,7 @@ app-projects {
   scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100vw;
   max-width: 100%;
   gap: 5%;
@@ -42,5 +43,14 @@ app-projects {
 }
 
 app-contact {
+  background-color: #f5f8ff;
+  color: #282938;
   scroll-margin-top: 100px;
+  // border: 1px solid #282938;
 }
+
+// app-hackathons{
+//   display: flex;
+// flex-direction: column;
+// align-items: center;  
+// }
