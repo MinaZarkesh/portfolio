@@ -44,6 +44,7 @@ a{
 }
 
 .contact-form {
+  
   width: 40%;
   gap: 2rem;
   display: flex;
@@ -120,3 +121,14 @@ a{
   }
 }
 
+.contact{
+  // background-color: #f5f8ff;
+  color: #282938;
+}
+
+app-contact-form{
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #f5f8ff;
+  color: #282938;
+}

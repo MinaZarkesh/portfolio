@@ -67,9 +67,9 @@
         }
         .github{
             background-color: transparent;
-            border: 1px solid var(--green);
+            border: 1px inset var(--green);
             &:hover {
-                border: 1px solid var(--purple);
+                border: 1px inset var(--purple);
               }
         }
     }
@@ -206,6 +206,31 @@
             gap: 1rem;
             display: flex;
             justify-content: space-between;
+        }
+    }
+}
+
+.frame{
+    width: calc(100% - 64px);
+    background: linear-gradient(120deg, #192732 0%, #354B5B 100%);
+    border-radius: 3rem;
+    border: 0.2px solid #354B5B;
+    .info{
+       .info-title, .info-subtitle, .info-text{
+           
+       
+           color: #ebebf2;
+       }
+        .demo, .github{
+            background-color: #ebebf2;
+            color: #000;
+            border: 1px solid #006B6A;
+
+            &:hover {
+                background-color: #006B6A;
+                color: #ebebf2;
+                border: 1px solid #006B6A;
+            }
         }
     }
 }

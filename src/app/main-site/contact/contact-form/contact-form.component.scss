@@ -2,10 +2,13 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  background-color: var(--dark-blue-BG);
+  // background-color: var(--dark-blue-BG);
+  background-color: #f5f8ff;
+
   // width: 500px;
   padding: 12px;
   border: 1px solid var(--purple);
+  border: 1px solid #282938;
   border-radius: 10px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -13,7 +16,8 @@ textarea {
   resize: vertical;
 
   &::placeholder {
-    color: white;
+    // color: white;
+    color: #282938;
   }
 
   &:focus-visible {
@@ -26,11 +30,13 @@ textarea {
 
     &:required:valid {
       border-color: var(--green);
+      border-color:  #006B6A;
     }
   }
 
   &:required:valid {
     border-color: var(--green);
+    border-color:  #006B6A;
     &:invalid {
       border-color: red !important;
     }
@@ -39,6 +45,7 @@ textarea {
   &:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: var(--white);
+    color: #282938;
   }
 }
 
@@ -124,6 +131,7 @@ input[type="submit"] {
       align-items: center;
       a {
         color: var(--purple);
+        color: #006B6A;
         text-decoration: none;
         padding: 0 0.25rem;
       }

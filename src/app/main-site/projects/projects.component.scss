@@ -1,6 +1,6 @@
-* {
-  background-color: #172530;
-}
+// * {
+//   background-color: #172530;
+// }
 
 // .text-right {
 //   display: flex;
@@ -81,9 +81,8 @@
 // }
 
 .text-right {
-
   padding: 100px 16px;
-  
+
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -93,7 +92,6 @@
   .mySkills {
     width: fit-content;
     span {
-
       // width: fit-content;
       color: white;
       font-size: 48px;
@@ -101,10 +99,16 @@
       font-weight: 700;
     }
   }
-  span{
+  span {
     text-align: center;
-   font-size: 2rem;
-   width: fit-content;
+    font-size: 2rem;
+    width: fit-content;
   }
 }
 
+app-project-model {
+  margin-bottom: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
