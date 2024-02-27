@@ -9,7 +9,7 @@
   --bar-width: 32px;
   --bar-height: 4px;
   --hamburger-gap: 4px;
-  --foreground-hm: var(--purple);
+  --foreground-hm: #5882AF;
   --background-hm: white;
   --hamburger-margin: 4px;
   --animation-timing: 0.2s ease-in-out;
@@ -40,7 +40,8 @@
 }
 
 body {
-  // background-color: #fff;
+   background:#fff;
+  // background: red;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@ button{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    // width: 1440px;
     justify-self: center;
   }
 }

@@ -1,10 +1,12 @@
 app-hero {
+  margin: 0;
   position: relative;
   scroll-margin-top: 100px;
   display: flex;
   width: 100vw;
   max-width: 100%;
-  height: calc(100vh - 100px);
+  // height: calc(100vh - 100px);
+  justify-content: center;
   height: 100vh;
 }
 
@@ -16,6 +18,17 @@ app-about {
   gap: 5%;
   padding: 5% 0%;
 }
+
+app-aboutv2 {
+  scroll-margin-top: 100px;
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  gap: 5%;
+  padding: 5% 0%;
+}
+
 
 app-skills {
   scroll-margin-top: 100px;

@@ -4,12 +4,13 @@
     padding:  25px 100px;
     display: flex;
     width: fit-content;
+    max-width: 1400px;
     height: fit-content;
     gap: 2rem;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
-    max-width: 100%;
+    // width: 100vw;
+    // max-width: 100%;
     img{
         height: fit-content;
         width: 50%;
@@ -119,7 +120,7 @@
         }
         .info-btn-group{
             display: flex;
-            gap: 4rem;
+            gap: 1rem;
             button {
                 width: fit-content;
                 display: flex;
@@ -211,7 +212,7 @@
 }
 
 .frame{
-    width: calc(100% - 64px);
+    width: calc(100% - 100px);
     background: linear-gradient(120deg, #192732 0%, #354B5B 100%);
     border-radius: 3rem;
     border: 0.2px solid #354B5B;

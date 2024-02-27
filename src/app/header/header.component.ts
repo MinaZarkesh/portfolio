@@ -42,14 +42,14 @@ export class HeaderComponent  {
   @Output()selectedIndex: number = -1; //for active link
 
   navLinks = [
-    {
-      href: '#about',
-      text: this.translate.instant('header.ABOUT' ),
-    },
-    {
-      href: '#skills',
-      text: this.translate.instant('header.SKILLS'),
-    },
+    // {
+    //   href: '#about',
+    //   text: this.translate.instant('header.ABOUT' ),
+    // },
+    // {
+    //   href: '#skills',
+    //   text: this.translate.instant('header.SKILLS'),
+    // },
     {
       href: '#projects',
       text: this.translate.instant('header.PORTFOLIO'),
