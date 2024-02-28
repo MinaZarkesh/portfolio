@@ -21,6 +21,7 @@
       name="email"
       placeholder="{{ 'contact.FORM_EMAIL' | translate }}"
       required
+      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
     />
 
     @if (!email.valid && email.touched) {
@@ -38,7 +39,7 @@
       required
     ></textarea>
     @if (!message.valid && message.touched) {
-      <span class="hint"> {{'contact.FORM_MESSGE' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}}</span>
+      <span class="hint"> {{'contact.FORM_MESSGE' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}} min. 4 char</span>
     }
     <div class="privacy">
       <div class="privacy-check-frame">

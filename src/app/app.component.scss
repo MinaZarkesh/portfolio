@@ -16,3 +16,11 @@ app-main-site {
   max-width: 100%;
   min-height: 100vh;
 }
+
+app-footer{
+  background-color: #f5f8ff;
+  border-top: 2px solid #172530;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

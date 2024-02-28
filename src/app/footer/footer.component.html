@@ -1,9 +1,9 @@
 <div class="container">
     <div class="frame">
-        <div routerLink="/home" class="logo-text-frame">
+        <!-- <div routerLink="/home" class="logo-text-frame">
             Mina Zarkesh
-          </div>
-        <span>© Mina Zarkesh 2024</span>
+          </div> -->
+        <span routerLink="/home">Mina Zarkesh 2024</span>
         <div class="icons" >
             <a *ngFor="let icon of icons" href={{icon.link}} target="_blank"><img src="{{icon.img}}"></a>
      
