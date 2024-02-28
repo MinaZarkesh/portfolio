@@ -53,13 +53,32 @@
     }
   }
 }
+
 @media screen and (max-width: 1023px) {
   .about-frame {
     flex-direction: column;
     width: 80%;
+    padding: 24px 0px;
     .skills {
       width: 100%;
       max-width: 100%;
     }
   }
+}
+
+@media screen and (max-width: 767px) {
+  .headline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.about-frame{
+  .skills{
+    h2{
+      display: flex;
+      padding-left: 8px;
+      font-size: 1rem;
+    }
+  }
+}
 }
