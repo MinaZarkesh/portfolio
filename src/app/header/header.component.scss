@@ -1,13 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 37px 50px;
+  padding: 16px 50px;
   padding-right: 25px;
   height: 100px;
   width: 100vw;
   // max-width: 1440px;
   max-width: 1920px;
-  align-items: center;
+  align-items: start;
   //  background-color: var(--dark-blue-BG);
 
   position: sticky;
@@ -177,8 +177,8 @@
 .sidebar {
   transition: translate var(--animation-timing), opacity var(--animation-timing);
   translate: 200%;
-  padding: 0rem 1rem;
-  margin-top: calc((var(--hamburger-height) * 3 + var(--hamburger-gap) * 2));
+  padding: 2rem 1rem;
+  margin-top: calc((var(--hamburger-height) * 1 + var(--hamburger-gap) * 2));
   background-color: var(--dark-blue-BG);
   // background-color: var(--green);
   nav {
@@ -212,7 +212,7 @@
   background: transparent;
   z-index: 11;
   position: sticky;
-  top: 0.5rem;
+  top: 12px;
   width: 40px;
   color: #f1e3d7;
   // margin: 1rem;
@@ -251,7 +251,7 @@
   }
 
   .header {
-    padding: 37px 50px;
+    padding: 16px 50px;
 
     .logo-text-frame {
       font-size: 1.5rem;
@@ -270,7 +270,7 @@
 
 @media (max-width: 767px) {
   .header {
-    padding: 25px;
+    padding: 0px 12px;
 
     .logo-text-frame {
       font-size: 0.75rem;
@@ -301,11 +301,11 @@
 
   @media screen and (max-width: 1023px) {
     bottom: 25px;
-    right: 50px;
+    right: 12px;
   }
 
   @media screen and (max-width: 767px) {
     bottom: 25px;
-    right: 12px;
+    // right: 12px;
   }
 }

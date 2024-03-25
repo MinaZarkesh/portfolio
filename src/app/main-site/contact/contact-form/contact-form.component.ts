@@ -5,6 +5,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
+import { Router } from 'express';
+
 // import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
@@ -16,6 +19,7 @@ import { HttpClient } from '@angular/common/http';
     FormsModule,
     MatFormFieldModule,
     TranslateModule,
+    RouterLink
   ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',

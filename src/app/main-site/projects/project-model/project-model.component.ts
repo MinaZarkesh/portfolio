@@ -32,8 +32,8 @@ export class ProjectModelComponent  implements OnInit {
     window.open(link);
   }
 
-  toGithub(){
-    window.open('https://github.com/minazarkesh');
+  toGithub(link:string){
+    window.open(link);
   }
 
 

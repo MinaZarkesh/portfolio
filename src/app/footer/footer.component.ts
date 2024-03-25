@@ -20,7 +20,7 @@ export class FooterComponent {
     },
     {
       img: 'assets/img/email.png',
-      link: 'mailto:mzarkesh@gmx.de',
+      link: 'mailto:contact@mina-zarkesh.de',
     },
     {
       img: 'assets/img/linkedin.png',

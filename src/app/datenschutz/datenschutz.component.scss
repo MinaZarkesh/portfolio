@@ -1,0 +1,38 @@
+
+*{
+    color: black;
+  }
+  .container {
+    scroll-margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    font-size: inherit;
+    height: fit-content;
+    min-height: calc(100vh - 400px);
+    padding: 50px 100px;
+    margin: 1px;
+    margin-top: 100px;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 1em;
+    }
+  
+    @media screen and (max-width: 1023px) {
+      padding: 50px;
+    }
+  
+    @media screen and (max-width: 767px) {
+      padding: 25px;
+    }
+  }
+  

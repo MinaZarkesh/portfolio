@@ -28,11 +28,11 @@ export class HeaderComponent  {
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'de-du', 'de-sie']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('de-du');
    
   }
   
-  active_language:string = 'en';
+  active_language:string = 'de-du';
 
   switchLanguage(language: string) {
     this.translate.use(language);
@@ -42,10 +42,10 @@ export class HeaderComponent  {
   @Output()selectedIndex: number = -1; //for active link
 
   navLinks = [
-    // {
-    //   href: '#about',
-    //   text: this.translate.instant('header.ABOUT' ),
-    // },
+    {
+      href: '#about',
+      text: this.translate.instant('header.ABOUT' ),
+    },
     // {
     //   href: '#skills',
     //   text: this.translate.instant('header.SKILLS'),

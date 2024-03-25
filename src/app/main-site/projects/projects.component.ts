@@ -17,11 +17,21 @@ export class ProjectsComponent {
   }
   projects = [
     {
+      img: 'assets/img/simple-crm.svg',
+      title: 'Simple CRM',
+      subtitle: 'Angular | TypeScript | HTML | CSS | Firebase',
+
+      text: this.translate.instant('portfolio.SIMPLE_CRM'),
+      demo: 'https://mina-zarkesh.developerakademie.net/Join-Mina/html/index.html',
+      git: 'https://github.com/minazarkesh',
+    }, //Simple CRM
+    {
       img: 'assets/img/join.svg',
       title: 'Join',
-      subtitle: 'Angular | TypeScript | HTML | CSS | Firebase',
+      subtitle: 'JavaScript | HTML | CSS ',
       text: this.translate.instant('portfolio.JOIN'),
       demo: 'https://mina-zarkesh.developerakademie.net/Join-Mina/html/index.html',
+      git: 'https://github.com/minazarkesh',
     }, //Join
     {
       img: 'assets/img/sharkie.svg',
@@ -29,27 +39,24 @@ export class ProjectsComponent {
       subtitle: 'JavaScript | HTML | CSS',
       text: this.translate.instant('portfolio.SHARKIE'),
       demo: 'https://mina-zarkesh.developerakademie.net/Sharkie/index.html',
+      git: 'https://github.com/minazarkesh',
     }, //Sharkie
-    {
-      img: 'assets/img/simple-crm.svg',
-      title: 'Simple CRM',
-      subtitle: 'JavaScript | HTML | CSS',
-      text: this.translate.instant('portfolio.SIMPLE_CRM'),
-      demo: 'https://mina-zarkesh.developerakademie.net/Join-Mina/html/index.html',
-    }, //Simple CRM
-    {
-      img: 'assets/img/pokedex.svg',
-      title: 'Pokedex',
-      subtitle: 'JavaScript | HTML | CSS | Api',
-      text: this.translate.instant('portfolio.POKEDEX'),
-      demo: 'https://mina-zarkesh.developerakademie.net/Pokedex/pokedex.html',
-    }, //Pokedex
-    {
-      img: 'assets/img/crypto-converter.svg',
-      title: 'Crypto Converter',
-      subtitle: 'Angular | TypeScript | RestAPI | HTML | CSS',
-      text: this.translate.instant('portfolio.CRYPTO_CONVERTER'),
-      demo: 'https://mina-zarkesh.developerakademie.net/Join-Mina/html/index.html',
-    }, //Crypto Converter
+
+    // {
+    //   img: 'assets/img/pokedex.svg',
+    //   title: 'Pokedex',
+    //   subtitle: 'JavaScript | HTML | CSS | Api',
+    //   text: this.translate.instant('portfolio.POKEDEX'),
+    //   demo: 'https://mina-zarkesh.developerakademie.net/Pokedex/pokedex.html',
+    // git: 'https://github.com/minazarkesh'
+    // }, //Pokedex
+    // {
+    //   img: 'assets/img/crypto-converter.svg',
+    //   title: 'Crypto Converter',
+    //   subtitle: 'Angular | TypeScript | RestAPI | HTML | CSS',
+    //   text: this.translate.instant('portfolio.CRYPTO_CONVERTER'),
+    //   demo: 'https://mina-zarkesh.developerakademie.net/Join-Mina/html/index.html',
+    // git: 'https://github.com/minazarkesh'
+    // }, //Crypto Converter
   ];
 }
