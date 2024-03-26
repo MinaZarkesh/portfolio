@@ -21,6 +21,14 @@
     "BULB": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
     "PUZZLE": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
   },
+  "aboutv2":{
+    "HEADLINE1": "Analytisches Denken und lösungsorientierte Arbeitsweise",
+    "TEXT1": "Meine Stärke liegt darin, mit methodischem Ansatz und Detailgenauigkeit Kernprobleme zu identifizieren und innovative Ansätze zu finden, die Herausforderungen in erfolgreiche Softwarelösungen verwandeln.",
+    "HEADLINE2": "Effiziente Teamplayerin",
+    "TEXT2": "Als Teil eines Teams bringe ich Projekte mit meiner Fähigkeit, schnell und präzise zu arbeiten, voran. Im besonderen Fokus steht bei mir eine Atmosphäre der Koorperation und des offenen Austauschs, um gemeinsame Ziele zu erreichen.",
+    "HEADLINE3": "Lernbereitschaft und Anpassungsfähigkeit",
+    "TEXT3": "Ich fördere aktiv meine eigenen Kompetenzen durch kontinuierliches Lernen und arbeite mich schnell in fortschrittliche Technologien und Methoden ein. Zudem bin ich offen für neue Herausforderungen im technischen Bereich."
+  },
   "skills": {
     "HEADLINE": "Meine Skills",
     "SUBTITLE": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend Technologien und Konzepten.",
@@ -65,6 +73,13 @@
     "PHONE": "Telefon",
     "EMAIL": "E-Mail",
     "SOURCE": "Quelle: "
-
+  },
+  "privacy":   {
+    "HEADLINE": "Datenschutzrichtlinie",
+    "SUBTITLE": "According to § 5 TMG",
+    "CONTACT": "Contact",
+    "PHONE": "Phone",
+    "EMAIL": "Email",
+    "SOURCE": "Source: "
   }
 }

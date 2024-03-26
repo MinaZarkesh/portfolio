@@ -8,12 +8,14 @@
       name="name"
       placeholder="{{ 'contact.FORM_NAME' | translate }}"
       required
-      required
     />
     @if (!name.valid && name.touched) {
-      <span class="hint"> {{'contact.FORM_NAME' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}}</span>
-      }
-       <input
+    <span class="hint">
+      {{ "contact.FORM_NAME" | translate }}
+      {{ "contact.FORM_MESSAGE_REQUIRED" | translate }}</span
+    >
+    }
+    <input
       #email="ngModel"
       [(ngModel)]="contactData.email"
       type="email"
@@ -25,7 +27,11 @@
     />
 
     @if (!email.valid && email.touched) {
-      <span class="hint"> {{'contact.FORM_EMAIL' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}} z.B. test&commat;email.de</span>
+    <span class="hint">
+      {{ "contact.FORM_EMAIL" | translate }}
+      {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} z.B.
+      test&commat;email.de</span
+    >
     }
 
     <textarea
@@ -39,7 +45,10 @@
       required
     ></textarea>
     @if (!message.valid && message.touched) {
-      <span class="hint"> {{'contact.FORM_MESSGE' | translate}} {{'contact.FORM_MESSAGE_REQUIRED'| translate}} min. 4 char</span>
+    <span class="hint">
+      {{ "contact.FORM_MESSGE" | translate }}
+      {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} min. 4 char</span
+    >
     }
     <div class="privacy">
       <div class="privacy-check-frame">
@@ -53,36 +62,28 @@
             required
           />
           <span
-            >{{ 'contact.FORM_CHECKBOX_PART1' | translate }}<a routerLink="/datenschutz">{{ 'contact.FORM_CHECKBOX_LINK' | translate}}</a> {{ 'contact.FORM_CHECKBOX_PART2' | translate }}</span
+            >{{ "contact.FORM_CHECKBOX_PART1" | translate
+            }}<a routerLink="/datenschutz">{{
+              "contact.FORM_CHECKBOX_LINK" | translate
+            }}</a>
+            {{ "contact.FORM_CHECKBOX_PART2" | translate }}</span
           >
         </div>
         @if (!checkboxState) {
-        <span class="privacy-text hint">{{'contact.FORM_UNCHECKED'| translate}}</span>
+        <span class="privacy-text hint">{{
+          "contact.FORM_UNCHECKED" | translate
+        }}</span>
         } @else{
-        <span class="privacy-text">{{'contact.FORM_CHECKED'| translate}}</span>
+        <span class="privacy-text">{{
+          "contact.FORM_CHECKED" | translate
+        }}</span>
         }
       </div>
-      <input [disabled]="checkValidation(contactForm)" type="submit" value="{{ 'contact.FORM_SUBMIT' | translate}}" />
+      <input
+        [disabled]="checkValidation(contactForm)"
+        type="submit"
+        value="{{ 'contact.FORM_SUBMIT' | translate }}"
+      />
     </div>
   </form>
 </div>
-
-<!-- <p class="mat-form"> -->
-    <!-- <mat-form-field appearance="fill">
-      <mat-label>Fill form field</mat-label>
-      <input matInput placeholder="Placeholder">
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field> -->
-  <!-- </p> -->
-
-
-  <!-- <div class="mat-form"> -->
-    <!-- <mat-form-field appearance="outline" >
-      <mat-label>Outline form field</mat-label>
-      <input matInput placeholder="Placeholder">
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field> -->
-
-  <!-- </div> -->

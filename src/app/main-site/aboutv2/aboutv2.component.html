@@ -1,49 +1,13 @@
 <div class="about-frame">
-  <div class="skills">
+
+  <div *ngFor="let skill of aboutv2" class="skills">
     <div class="headline">
       <img class="skills-icon" src="assets/img/bulb-green.svg" />
       <h2 class="skills-title">
-        Analytisches Denken und lösungsorientierte Arbeitsweise
+        {{ skill.headline | translate }}
       </h2>
     </div>
-    <span class="skills-text"
-      >Meine Stärke liegt darin, mit methodischem Ansatz und Detailgenauigkeit
-      Kernprobleme zu identifizieren und innovative Ansätze zu finden, die
-      Herausforderungen in erfolgreiche Softwarelösungen verwandeln.</span
-    >
+    <span class="skills-text">{{ skill.text | translate }} </span>
   </div>
-  <div class="skills">
-    <div class="headline">
-      <img class="skills-icon" src="assets/img/bulb-green.svg" />
-      <h2 class="skills-title">Effiziente Teamplayerin</h2>
-    </div>
-    <span class="skills-text"
-      >Als Teil eines Teams bringe ich Projekte mit meiner Fähigkeit, schnell
-      und präzise zu arbeiten, voran. Im besonderen Fokus steht bei mir eine
-      Atmosphäre der Koorperation und des offenen Austauschs, um gemeinsame
-      Ziele zu erreichen.</span
-    >
-  </div>
-  <div class="skills">
-    <div class="headline">
-      <img class="skills-icon" src="assets/img/bulb-green.svg" />
-      <h2 class="skills-title">Lernbereitschaft und Anpassungsfähigkeit</h2>
-    </div>
-    <span class="skills-text"
-      >Ich fördere aktiv meine eigenen Kompetenzen durch kontinuierliches Lernen
-      und arbeite mich schnell in fortschrittliche Technologien und Methoden
-      ein. Zudem bin ich offen für neue Herausforderungen im technischen
-      Bereich.</span
-    >
-  </div>
-  <!-- <div class="skills">
-    <div class="headline">
-      <img class="skills-icon" src="assets/img/bulb-green.svg" />
-      <h2 class="skills-title">Strategy & Direction</h2>
-    </div>
-    <span class="skills-text"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.</span
-    >
-  </div> -->
+
 </div>

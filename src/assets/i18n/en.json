@@ -21,6 +21,14 @@
     "BULB": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
     "PUZZLE": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
   },
+  "aboutv2": {
+    "HEADLINE1": "Analytical Thinking & Solution-Focused",
+    "TEXT1": " I excel at pinpointing issues with precision and devising innovative solutions that turn challenges into effective software outcomes.",
+    "HEADLINE2": "Efficient Team Player",
+    "TEXT2": "As part of a team, I advance projects with my ability to work quickly and accurately. I particularly focus on fostering an atmosphere of cooperation and open exchange to achieve common goals.",
+    "HEADLINE3": "Eager to Learn & Adapt",
+    "TEXT3": " I actively pursue skill enhancement and swiftly integrate new technologies and methods, embracing technical challenges with openness."
+  },
   "skills": {
     "HEADLINE": "My Skills",
     "SUBTITLE": "I have gained experience in building projects with various front end technologies and concepts.",
@@ -58,13 +66,20 @@
     "IMPRINT": "Imprint",
     "PRIVACY": "Privacy Policy"
   },
-  "IMPRINT": {
+  "imprint": {
     "HEADLINE": "Imprint",
     "SUBTITLE": "According to § 5 TMG",
     "CONTACT": "Contact",
     "PHONE": "Phone",
     "EMAIL": "Email",
     "SOURCE": "Source: "
-
+  },
+  "privacy":   {
+    "HEADLINE": "Privacy Policy",
+    "SUBTITLE": "According to § 5 TMG",
+    "CONTACT": "Contact",
+    "PHONE": "Phone",
+    "EMAIL": "Email",
+    "SOURCE": "Source: "
   }
 }
