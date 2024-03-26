@@ -10,21 +10,21 @@
     max-width: 100%;
     font-size: inherit;
     height: fit-content;
-    min-height: calc(100vh - 400px);
+    min-height: calc(100vh - 313px);
     padding: 50px 100px;
     margin: 1px;
     margin-top: 100px;
     h1 {
-      font-size: 2em;
+      font-size: 1.75rem;
       margin-bottom: 16px;
     }
     h2 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       margin-top: 16px;
       margin-bottom: 8px;
     }
     p {
-      font-size: 1em;
+      font-size: 1rem;
     }
   
     @media screen and (max-width: 1023px) {

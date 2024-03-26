@@ -64,7 +64,7 @@
   },
   "footer": {
     "IMPRINT": "Impressum",
-    "PRIVACY": "Datenschutzrichtlinie"
+    "PRIVACY": "Datenschutz"
   },
   "imprint": {
     "HEADLINE": "Impressum",
@@ -75,7 +75,7 @@
     "SOURCE": "Quelle: "
   },
   "privacy":   {
-    "HEADLINE": "Datenschutzrichtlinie",
+    "HEADLINE": "Datenschutz",
     "SUBTITLE": "According to § 5 TMG",
     "CONTACT": "Contact",
     "PHONE": "Phone",

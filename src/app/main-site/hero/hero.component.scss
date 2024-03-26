@@ -95,7 +95,6 @@
 .name {
   position: absolute;
   top: 20%;
-  // left: 25px;
   width: 100vw;
   max-width: 1920px;
   padding-left: 50px;
@@ -104,9 +103,9 @@
   font-weight: 100;
   line-height: 100%;
   color: #cdd2db;
+
   @media screen and (max-width: 1970px) {
     padding-left: 100px;
-    // left: 50px;
   }
   
   @media screen and (max-width: 767px) {
@@ -116,7 +115,6 @@
     justify-content: center;
     display: flex;
     font-size: max(24px, 5vw);
-    
   }
 }
 
@@ -147,7 +145,6 @@
   height: fit-content;
   font-size: max(6vw, 24px);
   font-weight: 900;
-  // line-height: 150%;
   color: #334b60;
 
   @media screen and (min-width: 768px) {

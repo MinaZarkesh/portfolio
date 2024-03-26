@@ -6,6 +6,6 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 export const routes: Routes = [
 {path: '', component:MainSiteComponent},
 {path: 'home',  component:MainSiteComponent},
-{path: 'impressum', component:ImpressumComponent},
-{path: 'datenschutz', component: DatenschutzComponent}
+{path: 'imprint', component:ImpressumComponent},
+{path: 'privacypolicy', component: DatenschutzComponent}
 ];
