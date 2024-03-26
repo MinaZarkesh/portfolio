@@ -66,7 +66,7 @@
     "IMPRINT": "Impressum",
     "PRIVACY": "Datenschutzrichtlinie"
   },
-  "IMPRINT": {
+  "imprint": {
     "HEADLINE": "Impressum",
     "SUBTITLE": "Angaben gemäß § 5 TMG",
     "CONTACT": "Kontakt",

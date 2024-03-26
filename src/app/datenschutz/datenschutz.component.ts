@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-datenschutz',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './datenschutz.component.html',
   styleUrl: './datenschutz.component.scss'
 })
