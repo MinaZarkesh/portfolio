@@ -1,14 +1,7 @@
 <div class="header">
   <img routerLink="/home" class="logo" src="assets/img/logo.svg" alt="" />
-  <!-- <div routerLink="/home" class="logo-text-frame">
-    Mina Zarkesh
-  </div> -->
   <div class="header-right-frame">
-    <!-- <div  class="language-switcher">
-    <button [class.activeLang]="active_language == 'de-du'" (click)="switchLanguage('de-du')" >{{ 'header.DU' | translate }}</button>
-    <button [class.activeLang]="active_language == 'en'" (click)="switchLanguage('en')">{{ 'header.EN' | translate }}</button>
-  </div> -->
-
+    <button id="translationBtn" (click)="toggleLanguage(this.tempLang)" class="translation">English <img id="langFlag" src="" alt="English"></button>
     <div class="links-header">
       <a
         *ngFor="let navLink of navLinks; let i = index"
@@ -38,6 +31,6 @@
 </div>
 <div class="go-up-frame">
   <a (click)="selectedIndex = -1" href="#hero"
-    ><img src="assets/img/go-up.svg" alt="Pfeil"
+    ><img src="assets/img/go-up.svg" alt="nach oben"
   /></a>
 </div>
