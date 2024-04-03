@@ -88,7 +88,7 @@ export class ContactFormComponent implements OnInit {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => alert('Email was sent successfully'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       //hier wird die Emailversandmeldung angezeigt
