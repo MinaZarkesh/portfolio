@@ -13,7 +13,7 @@
     min-height: calc(100vh - 313px);
     padding: 50px 100px;
     margin: 1px;
-    margin-top: 100px;
+    margin-top: 0px;
     h1 {
       font-size: 1.75rem;
       margin-bottom: 16px;
@@ -21,6 +21,11 @@
     h2 {
       font-size: 1.5rem;
       margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    h3{
+      font-size: 1.17rem;
+      margin-top: 8px;
       margin-bottom: 8px;
     }
     p {

@@ -78,12 +78,11 @@ export class ContactFormComponent implements OnInit {
   onSubmit(ngForm: NgForm) {
     console.log(this.contactData);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      console.log('Email was not sent yet. Test');
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log(response);  //hier wird die Antwort vom Server angezeigt
+           //hier wird die Antwort vom Server angezeigt
             ngForm.resetForm();
           },
           error: (error) => {
@@ -92,7 +91,8 @@ export class ContactFormComponent implements OnInit {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('Email was sent'); //hier wird die Emailversandmeldung angezeigt
+      //hier wird die Emailversandmeldung angezeigt
+      alert('Email was sent');
       ngForm.resetForm();
     }
   }

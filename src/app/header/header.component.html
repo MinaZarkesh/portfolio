@@ -1,8 +1,8 @@
 <div class="header">
-<a routerLink="/home">  <img class="logo" src="assets/img/logo.svg" alt="" />
+<a routerLink="/home">  <img class="logo" src="assets/img/logo.svg" alt="logo" />
 </a> 
  <div class="header-right-frame">
-    <button id="translationBtn" (click)="toggleLanguage(this.tempLang)" class="translation">English <img id="langFlag" src="" alt="English"></button>
+    <button id="translationBtn" (click)="toggleLanguage(this.tempLang)" class="translation">English <img id="langFlag" src="assets/img/united-kingdom.png" alt="English"></button>
     <div class="links-header">
       <a
         *ngFor="let navLink of navLinks; let i = index"

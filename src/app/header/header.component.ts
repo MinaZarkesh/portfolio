@@ -49,14 +49,14 @@ export class HeaderComponent {
       this.switchLanguage('en');
       if (translationBtn) {
         translationBtn.innerHTML = /*html*/ `
-          Deutsch <img src="" alt="Deutsch">
+          Deutsch <img style="width: 16px"  id="langFlag" src="assets/img/german.png" alt="Deutsch">
         `;
       }
     } else {
       this.switchLanguage('de-du');
       if (translationBtn) {
         translationBtn.innerHTML = /*html*/ `
-        English <img src="" alt="English">
+        English <img style="width: 16px" id="langFlag" src="assets/img/united-kingdom.png" alt="English">
       `;
       }
     }

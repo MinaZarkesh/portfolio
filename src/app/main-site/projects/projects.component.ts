@@ -15,6 +15,8 @@ export class ProjectsComponent {
   constructor(private translate: TranslateService) {
     // Other constructor logic
   }
+
+  //Projects
   projects = [
     {
       img: 'assets/img/simple-crm.svg',
@@ -23,7 +25,7 @@ export class ProjectsComponent {
 
       text: this.translate.instant('portfolio.SIMPLE_CRM'),
       demo: 'https://mina-zarkesh.de/projekte/simple-crm/index.html',
-      git: 'https://github.com/minazarkesh',
+      git: 'https://github.com/minazarkesh/simple-crm',
     }, //Simple CRM
     {
       img: 'assets/img/join.svg',
@@ -31,7 +33,7 @@ export class ProjectsComponent {
       subtitle: 'JavaScript | HTML | CSS ',
       text: this.translate.instant('portfolio.JOIN'),
       demo: 'https://mina-zarkesh.de/projekte/join/html/index.html',
-      git: 'https://github.com/minazarkesh',
+      git: 'https://github.com/minazarkesh/join',
     }, //Join
     {
       img: 'assets/img/sharkie.svg',
@@ -39,7 +41,7 @@ export class ProjectsComponent {
       subtitle: 'JavaScript | HTML | CSS',
       text: this.translate.instant('portfolio.SHARKIE'),
       demo: 'https://mina-zarkesh.de/projekte/sharkie/index.html',
-      git: 'https://github.com/minazarkesh',
+      git: 'https://github.com/minazarkesh/sharkie',
     }, //Sharkie
 
     // {

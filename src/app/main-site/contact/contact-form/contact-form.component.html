@@ -14,6 +14,11 @@
       {{ "contact.FORM_NAME" | translate }}
       {{ "contact.FORM_MESSAGE_REQUIRED" | translate }}</span
     >
+    } @else {
+      <span class="white">
+        {{ "contact.FORM_NAME" | translate }}
+        {{ "contact.FORM_MESSAGE_REQUIRED" | translate }}</span
+      >
     }
     <input
       #email="ngModel"
@@ -32,8 +37,13 @@
       {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} z.B.
       test&commat;email.de</span
     >
+    } @else {
+      <span class="white">
+        {{ "contact.FORM_EMAIL" | translate }}
+        {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} z.B.
+        test&commat;email.de</span
+      >
     }
-
     <textarea
       #message="ngModel"
       minlength="4"
@@ -49,6 +59,11 @@
       {{ "contact.FORM_MESSGE" | translate }}
       {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} min. 4 char</span
     >
+    } @else {
+      <span class="white">
+        {{ "contact.FORM_MESSGE" | translate }}
+        {{ "contact.FORM_MESSAGE_REQUIRED" | translate }} min. 4 char</span
+      >
     }
     <div class="privacy">
       <div class="privacy-check-frame">

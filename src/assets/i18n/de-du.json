@@ -21,7 +21,7 @@
     "BULB": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
     "PUZZLE": "Etwas Persönliches zum Teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
   },
-  "aboutv2":{
+  "aboutv2": {
     "HEADLINE1": "Analytisches Denken und lösungsorientierte Arbeitsweise",
     "TEXT1": "Meine Stärke liegt darin, mit methodischem Ansatz und Detailgenauigkeit Kernprobleme zu identifizieren und innovative Ansätze zu finden, die Herausforderungen in erfolgreiche Softwarelösungen verwandeln.",
     "HEADLINE2": "Effiziente Teamplayerin",
@@ -72,11 +72,48 @@
     "CONTACT": "Kontakt",
     "PHONE": "Telefon",
     "EMAIL": "E-Mail",
-    "SOURCE": "Quelle: "
+    "SOURCE": "Quelle: ",
+    "MEDIA_SOURCE": "Angaben der Quelle für verwendetes Bilder- und Grafikmaterial",
+    "PROFILE_PIC": "Profilbild",
+    "SHARKIE_DESC": "Grafiken",
+    "SHARKIE_DESC2": "Sounds",
+    "ICONS_DESC_UK": "Uk flag icons erstellt von Freepik - Flaticon",
+    "ICONS_DESC_DE": "German icons erstellt von GeekClick - Flaticon"
   },
-  "privacy":   {
-    "HEADLINE": "Datenschutz",
-    "SUBTITLE": "According to § 5 TMG",
+  "privacy": {
+    "HEADLINE": "Datenschutzerklärung",
+    "SUBLINE": "1. Datenschutz auf einen Blick",
+    "SUBTITLE_1": "Allgemeine Hinweise",
+    "TEXT1": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausfürliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+    "SUBLINE_2": "Datenerfassung auf dieser Website",
+    "SUBTITLE_2": " Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+    "TEXT2": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt ''Hinweis zur Verantwortlichen Stelle'' in dieser Datenschutzerklärung entnehmen.",
+    "SUBTITLE_3": "Wie erfassen wir Ihre Daten?",
+    "TEXT3": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+    "TEXT4": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
+    "SUBTITLE_4": "Wofür nutzen wir Ihre Daten?",
+    "TEXT5": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.",
+    "SUBTITLE_5": "Welche Rechte haben Sie bezüglich auf Ihre Daten?",
+    "TEXT6": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Au&szlig;erdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
+    "TEXT7": "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.",
+    "SUBLINE_3": "Analyse-Tools und Tools von Dritt&shy;anbietern",
+    "TEXT8": "Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen.",
+    "TEXT9": "Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung.",
+    "SUBLINE_4": "2. Hosting",
+    "TEXT10": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter: ",
+    "TEXT11": "Anbieter ist die Strato AG, Otto-Ostrowski-Stra&szlig;e 7, 10249 Berlin (nachfolgend &bdquo;Strato&ldquo;). Wenn Sie unsere Website besuchen, erfasst Strato verschiedene Logfiles inklusive Ihrer IP-Adressen.",
+    "TEXT12": "Weitere Informationen entnehmen Sie der Datenschutzerklärung von Strato:",
+    "TEXT13": "Die Verwendung von Strato erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.",
+    "SUBTITLE_6":"Auftragsverarbeitung",
+    "TEXT14": "Wir haben einen Verüber Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.",
+   "SUBLINE_5":"3. Allgemeine Hinweise und Pflicht&shy;informationen",
+   "SUBTITLE_7":"Datenschutz",
+    "TEXT15": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+    "TEXT16": " Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erl&auml;utert auch, wie und zu welchem Zweck das geschieht.",
+    "TEXT17": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+
+   
+   
     "CONTACT": "Contact",
     "PHONE": "Phone",
     "EMAIL": "Email",
