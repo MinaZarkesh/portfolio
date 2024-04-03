@@ -24,7 +24,7 @@ export class ProjectsComponent {
       subtitle: 'Angular | TypeScript | HTML | CSS | Firebase',
 
       text: this.translate.instant('portfolio.SIMPLE_CRM'),
-      demo: 'https://mina-zarkesh.de/projekte/simple-crm/index.html',
+      demo: 'http://simple-crm.mina-zarkesh.de/',
       git: 'https://github.com/minazarkesh/simple-crm',
     }, //Simple CRM
     {
@@ -32,7 +32,7 @@ export class ProjectsComponent {
       title: 'Join',
       subtitle: 'JavaScript | HTML | CSS ',
       text: this.translate.instant('portfolio.JOIN'),
-      demo: 'https://mina-zarkesh.de/projekte/join/html/index.html',
+      demo: 'http://join.mina-zarkesh.de/html/',
       git: 'https://github.com/minazarkesh/join',
     }, //Join
     {
@@ -40,7 +40,7 @@ export class ProjectsComponent {
       title: 'Sharkie',
       subtitle: 'JavaScript | HTML | CSS',
       text: this.translate.instant('portfolio.SHARKIE'),
-      demo: 'https://mina-zarkesh.de/projekte/sharkie/index.html',
+      demo: 'http://sharkie.mina-zarkesh.de/',
       git: 'https://github.com/minazarkesh/sharkie',
     }, //Sharkie
 

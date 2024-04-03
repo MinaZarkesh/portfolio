@@ -7,6 +7,6 @@
       /></a>
     </div>
   </div>
-  <a routerLink="/imprint">{{ "footer.IMPRINT" | translate }}</a>
-  <a routerLink="/privacypolicy">{{ "footer.PRIVACY" | translate }}</a>
+  <a [routerLink]="[ '/imprint' ]" routerLinkActive="active">{{ "footer.IMPRINT" | translate }}</a>
+  <a [routerLink]="[ '/privacypolicy' ]" routerLinkActive="active">{{ "footer.PRIVACY" | translate }}</a>
 </div>
