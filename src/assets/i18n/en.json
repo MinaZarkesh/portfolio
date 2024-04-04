@@ -76,9 +76,7 @@
     "MEDIA_SOURCE": "Information about the source of the images and graphics material used",
     "PROFILE_PIC": "Profile picture",
     "SHARKIE_DESC": "Graphics",
-    "SHARKIE_DESC2": "Sounds",
-    "ICONS_DESC_UK": "Uk flag icons created by Freepik - Flaticon",
-    "ICONS_DESC_DE": "German icons created by GeekClick - Flaticon"
+    "SHARKIE_DESC2": "Sounds"
   },
   "privacy":   {
     "HEADLINE": "Private Policy",
