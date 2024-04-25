@@ -22,7 +22,6 @@ export class ProjectsComponent {
       img: 'assets/img/simple-crm.svg',
       title: 'Simple CRM',
       subtitle: 'Angular | TypeScript | HTML | CSS | Firebase',
-
       text: this.translate.instant('portfolio.SIMPLE_CRM'),
       demo: 'http://simple-crm.mina-zarkesh.de/',
       git: 'https://github.com/minazarkesh/simple-crm',
